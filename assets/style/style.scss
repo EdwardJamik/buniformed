@@ -1,0 +1,649 @@
+@import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap");
+@import "nullstyled";
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+
+  @media screen and (max-width: 1024px) {
+    padding: 0 20px;
+  }
+}
+
+h4 {
+  font-family: "Dela Gothic One", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 50.4px;
+  text-align: center;
+  color: #102b2c;
+  text-transform: uppercase;
+  @media screen and (max-width: 768px) {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 33.6px;
+    text-align: center;
+  }
+}
+
+.up_section {
+  background: #000000;
+
+  & .container {
+    min-height: 48px;
+    height: min-content;
+    display: flex;
+    align-items: center;
+    padding: 12px 50px;
+
+    @media screen and (max-width: 768px) {
+      display: block;
+      padding: 8px 56px;
+    }
+
+    & p {
+      max-width: 600px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 0 0 0 120px;
+      font-size: 16px;
+      font-weight: 400;
+      text-align: center;
+      line-height: 18px;
+      font-family: "Dela Gothic One", sans-serif;
+
+      @media screen and (max-width: 768px) {
+        padding: 0;
+        font-size: 12px;
+      }
+    }
+
+    & a {
+      color: #00c2cb;
+      font-size: 14px;
+      font-weight: 400;
+      text-transform: uppercase;
+      min-width: 120px;
+      text-align: center;
+
+      @media screen and (max-width: 768px) {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 7px;
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+header {
+  & .navigation {
+    display: flex;
+    align-items: center;
+    padding: 26px 0;
+    gap: 20px;
+
+    @media screen and (max-width: 1480px) {
+      padding: 26px 50px;
+      gap: 14px;
+    }
+
+    @media screen and (max-width: 1024px) {
+      padding: 26px 20px;
+      gap: 0;
+    }
+
+    & .shop_button {
+      font-size: 14px;
+      font-weight: 400;
+      text-align: left;
+      color: #102b2c;
+      font-family: "Dela Gothic One", sans-serif;
+
+      display: flex;
+      align-items: center;
+
+      padding: 20px 26px;
+      border: 2px solid #102b2c;
+      border-radius: 10px;
+      cursor: pointer;
+
+      @media screen and (max-width: 1024px) {
+        width: 52px;
+        height: 42px;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0;
+        min-width: 52px;
+      }
+
+      & #menu {
+        width: 28px;
+        height: 16px;
+        position: relative;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: 0.5s ease-in-out;
+        -moz-transition: 0.5s ease-in-out;
+        -o-transition: 0.5s ease-in-out;
+        transition: 0.5s ease-in-out;
+
+        margin-right: 16px;
+
+        @media screen and (max-width: 1024px) {
+          margin: 0;
+          width: 20px;
+        }
+
+        & span {
+          display: block;
+          position: absolute;
+          height: 2px;
+          width: 100%;
+          background: #102b2c;
+          border-radius: 9px;
+          opacity: 1;
+          left: 0;
+          -webkit-transform: rotate(0deg);
+          -moz-transform: rotate(0deg);
+          -o-transform: rotate(0deg);
+          transform: rotate(0deg);
+          -webkit-transition: 0.25s ease-in-out;
+          -moz-transition: 0.25s ease-in-out;
+          -o-transition: 0.25s ease-in-out;
+          transition: 0.25s ease-in-out;
+        }
+      }
+
+      #menu #menu span:nth-child(1) {
+        top: 0px;
+      }
+
+      #menu span:nth-child(2),
+      #menu span:nth-child(3) {
+        top: 8px;
+      }
+
+      #menu span:nth-child(4) {
+        top: 16px;
+      }
+
+      #menu.open span:nth-child(1) {
+        top: 16px;
+        width: 0%;
+        left: 50%;
+      }
+
+      #menu.open span:nth-child(2) {
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+
+      #menu.open span:nth-child(3) {
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+      }
+
+      #menu.open span:nth-child(4) {
+        top: 8px;
+        width: 0%;
+        left: 50%;
+      }
+    }
+
+    & .logo {
+      margin: 0 auto;
+      padding-left: 72px;
+      @media screen and (max-width: 1440px) {
+        padding: 0;
+      }
+
+      @media screen and (max-width: 768px) {
+        max-width: 240px;
+        width: 100%;
+      }
+
+      @media screen and (max-width: 520px) {
+        max-width: 174px;
+      }
+    }
+
+    & .login_button {
+      @media screen and (max-width: 1024px) {
+        display: none;
+      }
+    }
+
+    & .search_button {
+      @media screen and (max-width: 1024px) {
+        display: none;
+      }
+    }
+
+    & .groupsLogin_button {
+      @media screen and (max-width: 1024px) {
+        display: none;
+      }
+
+      & .default_button {
+        height: 58px;
+        padding: 18px 10px;
+        font-size: 14px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+span {
+  &.blue {
+    color: #00c2cb;
+  }
+
+  &.themysion {
+    font-family: "Themysion", sans-serif;
+    text-transform: capitalize;
+  }
+}
+
+.red_button {
+  font-family: "Dela Gothic One", sans-serif;
+  text-align: center;
+  background: #b12025;
+  border: 2px solid #102b2c;
+  box-shadow: 0px 4px 50px 0px #0000001a;
+  display: block;
+  width: fit-content;
+  height: 66px;
+  border-radius: 10px;
+  text-transform: uppercase;
+
+  padding: 22px 42px;
+
+  @media screen and (max-width: 1024px) {
+    border-width: 1px;
+  }
+}
+
+.default_button {
+  font-family: "Dela Gothic One", sans-serif;
+  text-align: center;
+  background: transparent;
+  border: 2px solid #102b2c;
+  box-shadow: 0px 4px 50px 0px #0000001a;
+  display: block;
+  width: fit-content;
+  height: 66px;
+  border-radius: 10px;
+  color: #102b2c;
+
+  text-transform: uppercase;
+
+  padding: 22px 42px;
+  @media screen and (max-width: 1024px) {
+    border-width: 1px;
+  }
+}
+
+.find_button {
+  text-align: center;
+  background: url("/assets/images/findIcon.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 2px solid #102b2c;
+  box-shadow: 0px 4px 50px 0px #0000001a;
+  display: block;
+  width: 74px;
+  height: 58px;
+  border-radius: 10px;
+  color: #102b2c;
+  @media screen and (max-width: 1024px) {
+    border-width: 1px;
+  }
+}
+
+.cart_button {
+  text-align: center;
+  background: url("/assets/images/cartIcon.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 2px solid #102b2c;
+  box-shadow: 0px 4px 50px 0px #0000001a;
+  display: block;
+  width: 74px;
+  height: 58px;
+  border-radius: 10px;
+  color: #102b2c;
+  @media screen and (max-width: 1024px) {
+    width: 52px;
+    height: 42px;
+    border-width: 1px;
+  }
+}
+
+.user_button {
+  text-align: center;
+  background: url("/assets/images/userIcon.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 2px solid #102b2c;
+  box-shadow: 0px 4px 50px 0px #0000001a;
+  display: block;
+  width: 74px;
+  height: 58px;
+  border-radius: 10px;
+  color: #102b2c;
+  @media screen and (max-width: 1024px) {
+    border-width: 1px;
+  }
+}
+
+footer {
+  // font-family: "Roboto Flex", sans-serif;
+  padding: 64px 0 32px;
+  background: #102b2c;
+
+  @media screen and (max-width: 1439px) {
+    padding: 64px 20px 32px;
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 30px 0px 24px;
+  }
+
+  & .container {
+    & .logo {
+      margin: 0 auto;
+      @media screen and (max-width: 480px) {
+        max-width: 138px;
+        width: 100%;
+      }
+    }
+
+    & .description {
+      padding: 30px 0 34px;
+      @media screen and (max-width: 768px) {
+        padding: 20px 0 24px;
+        max-width: 376px;
+        margin: 0 auto;
+      }
+      & p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+
+        text-align: center;
+        @media screen and (max-width: 480px) {
+          font-size: 14px;
+        }
+      }
+    }
+
+    & .navigation {
+      margin-bottom: 34px;
+      & ul {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+
+        @media screen and (max-width: 480px) {
+          gap: 24px;
+        }
+
+        & li {
+          & a {
+            font-family: "Roboto Flex", sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 24px;
+            @media screen and (max-width: 480px) {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+
+    & .contact_list {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-bottom: 50px;
+      gap: 80px;
+
+      @media screen and (max-width: 768px) {
+        flex-direction: column;
+        gap: 16px;
+        padding-bottom: 20px;
+      }
+
+      & > div {
+        position: relative;
+
+        &.phone {
+          background: url("/assets/images/phoneIcon.svg");
+          background-position: left;
+          background-repeat: no-repeat;
+          background-size: 18px;
+
+          padding-left: 30px;
+        }
+
+        &.location {
+          background: url("/assets/images/geoIcon.svg");
+          background-position: left;
+          background-repeat: no-repeat;
+          background-size: 14px;
+
+          padding-left: 24px;
+        }
+
+        &.mail {
+          background: url("/assets/images/mailIcon.svg");
+          background-position: left;
+          background-repeat: no-repeat;
+          background-size: 21px;
+
+          padding-left: 30px;
+        }
+
+        & a {
+          font-family: "Roboto Flex", sans-serif;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+          text-align: center;
+          color: #00c2cb;
+        }
+
+        &:not(:last-child) {
+          &::after {
+            content: " ";
+            position: absolute;
+            width: 1px;
+            height: 28px;
+            background: #fff;
+            right: -40px;
+            opacity: 0.2;
+
+            @media screen and (max-width: 768px) {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+
+    & .contact_form {
+      background: #00c2cb;
+      max-width: 1400px;
+      height: 146px;
+      margin: 0 auto;
+      border-radius: 10px;
+      padding: 36px 105px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      @media screen and (max-width: 1439px) {
+        display: block;
+        height: auto;
+      }
+
+      @media screen and (max-width: 768px) {
+        padding: 30px 20px;
+      }
+
+      & .contact_pre {
+        @media screen and (max-width: 1439px) {
+          max-width: 1024px;
+          width: 100%;
+          margin: 0 auto;
+        }
+        & h5 {
+          font-family: "Dela Gothic One", sans-serif;
+          font-size: 28px;
+          font-weight: 400;
+          line-height: 39.2px;
+          text-align: left;
+          text-transform: uppercase;
+          @media screen and (max-width: 1439px) {
+            text-align: center;
+          }
+          @media screen and (max-width: 1024px) {
+            text-align: left;
+          }
+        }
+
+        & p {
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 27px;
+          text-align: left;
+          @media screen and (max-width: 1439px) {
+            text-align: center;
+          }
+          @media screen and (max-width: 1024px) {
+            text-align: left;
+          }
+        }
+      }
+
+      & .form {
+        display: flex;
+        gap: 24px;
+
+        @media screen and (max-width: 1439px) {
+          margin-top: 20px;
+          justify-content: center;
+        }
+
+        @media screen and (max-width: 1024px) {
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+        }
+
+        & input {
+          border: 2px solid #000000;
+          border-radius: 10px;
+          height: 66px;
+          width: 242px;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 18.75px;
+          text-align: left;
+          padding: 24px;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 18.75px;
+          text-align: left;
+          color: #000;
+
+          @media screen and (max-width: 1024px) {
+            width: 100%;
+          }
+
+          &::placeholder {
+            color: #102b2c;
+            font-weight: 400;
+            line-height: 18.75px;
+            font-size: 16px;
+            text-align: left;
+          }
+        }
+
+        & .submit_button {
+          border: 2px solid #102b2c;
+          box-shadow: 0px 4px 50px 0px #0000001a;
+          width: 242px;
+          height: 66px;
+          border-radius: 10px;
+          background: #000000;
+          text-transform: uppercase;
+          transition: 0.2s ease-in-out;
+
+          @media screen and (max-width: 1024px) {
+            width: 100%;
+          }
+
+          &:hover {
+            background: none;
+            color: #000;
+          }
+        }
+      }
+    }
+
+    & .bottom {
+      display: flex;
+      justify-content: space-between;
+      padding: 44px 124px 0;
+
+      @media screen and (max-width: 1024px) {
+        padding: 44px 44px 0;
+      }
+
+      @media screen and (max-width: 768px) {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 24px 0 0;
+      }
+
+      & .left_side {
+        @media screen and (max-width: 768px) {
+          margin-top: 16px;
+        }
+      }
+
+      & .right_side {
+        display: flex;
+        gap: 54px;
+
+        @media screen and (max-width: 768px) {
+          flex-direction: column;
+          gap: 14px;
+          margin-bottom: 16px;
+        }
+
+        & a {
+          font-family: "Roboto Flex", sans-serif;
+        }
+      }
+    }
+  }
+}

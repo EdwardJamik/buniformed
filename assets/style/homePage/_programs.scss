@@ -1,0 +1,60 @@
+.programs {
+  position: relative;
+  height: 100vh;
+  &::before {
+    content: " ";
+    position: absolute;
+    display: block;
+    width: 100%;
+    background: url(/assets/images/top_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    height: 250px;
+    z-index: -1;
+  }
+
+  &::after {
+    content: " ";
+    position: absolute;
+    display: block;
+    width: 100%;
+    background: url(/assets/images/bottom_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    height: 250px;
+    bottom: 0;
+    z-index: -1;
+  }
+
+  & .container {
+    position: relative;
+    padding: 240px 20px 64px;
+
+    &::before {
+      content: " ";
+      position: absolute;
+      top: 54%;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      background: #def7f9;
+    }
+
+    @media screen and (max-width: 768px) {
+      padding: 50px 10px 50px;
+    }
+
+    & h4 {
+      max-width: 576px;
+      width: 100%;
+      margin: 0 auto;
+      @media screen and (max-width: 768px) {
+        // margin-bottom: 24px;
+        font-size: 24px;
+      }
+    }
+  }
+}
