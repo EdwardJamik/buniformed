@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.cdnfonts.com/css/themysion");
 *,
 *:before,
 *:after {
@@ -22,13 +24,13 @@
 a:focus,
 a:active {
   outline: none;
-  color: #102b2c;
+  color: inherit;
 }
 
 a,
 a:visited {
   text-decoration: none;
-  color: #102b2c;
+  color: inherit;
 }
 
 a:hover {
@@ -222,13 +224,32 @@ h4 {
   line-height: 18px;
   font-family: "Dela Gothic One", sans-serif;
 }
+.up_section .container p span {
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 18px;
+  font-family: "Dela Gothic One", sans-serif;
+  padding-right: 4px;
+}
+@media screen and (max-width: 768px) {
+  .up_section .container p span {
+    font-size: 12px;
+  }
+}
 @media screen and (max-width: 768px) {
   .up_section .container p {
+    display: flex;
+    flex-direction: column;
     padding: 0;
     font-size: 12px;
   }
 }
 .up_section .container a {
+  font-family: Dela Gothic One;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20.27px;
   color: #00c2cb;
   font-size: 14px;
   font-weight: 400;
@@ -243,6 +264,8 @@ h4 {
     justify-content: center;
     margin-top: 7px;
     font-size: 12px;
+    font-weight: 400;
+    line-height: 17.38px;
   }
 }
 
@@ -383,6 +406,7 @@ header .navigation .groupsLogin_button .default_button {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #102b2c;
 }
 
 span.blue {
@@ -398,6 +422,7 @@ span.themysion {
   text-align: center;
   background: #b12025;
   border: 2px solid #102b2c;
+  color: #fff;
   box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.1019607843);
   display: block;
   width: -moz-fit-content;
@@ -668,6 +693,14 @@ footer .container .contact_form .contact_pre h5 {
     text-align: left;
   }
 }
+@media screen and (max-width: 480px) {
+  footer .container .contact_form .contact_pre h5 {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+  }
+}
 footer .container .contact_form .contact_pre p {
   font-size: 18px;
   font-weight: 400;
@@ -682,6 +715,15 @@ footer .container .contact_form .contact_pre p {
 @media screen and (max-width: 1024px) {
   footer .container .contact_form .contact_pre p {
     text-align: left;
+  }
+}
+@media screen and (max-width: 480px) {
+  footer .container .contact_form .contact_pre p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+    margin-top: 6px;
   }
 }
 footer .container .contact_form .form {
@@ -699,6 +741,11 @@ footer .container .contact_form .form {
     display: flex;
     flex-direction: column;
     gap: 16px;
+  }
+}
+@media screen and (max-width: 480px) {
+  footer .container .contact_form .form {
+    margin-top: 16px;
   }
 }
 footer .container .contact_form .form input {
@@ -720,6 +767,11 @@ footer .container .contact_form .form input {
 @media screen and (max-width: 1024px) {
   footer .container .contact_form .form input {
     width: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  footer .container .contact_form .form input {
+    height: 54px;
   }
 }
 footer .container .contact_form .form input::-moz-placeholder {
@@ -745,10 +797,23 @@ footer .container .contact_form .form .submit_button {
   background: #000000;
   text-transform: uppercase;
   transition: 0.2s ease-in-out;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23.17px;
+  font-family: "Dela Gothic One", sans-serif;
+  text-align: center;
 }
 @media screen and (max-width: 1024px) {
   footer .container .contact_form .form .submit_button {
     width: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  footer .container .contact_form .form .submit_button {
+    height: 54px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20.27px;
   }
 }
 footer .container .contact_form .form .submit_button:hover {
@@ -790,4 +855,290 @@ footer .container .bottom .right_side {
 }
 footer .container .bottom .right_side a {
   font-family: "Roboto Flex", sans-serif;
+}
+
+b {
+  font-weight: 800;
+}
+
+.breadcrumbs ul {
+  display: flex;
+  align-items: center;
+}
+.breadcrumbs ul li {
+  position: relative;
+  font-family: Roboto Flex;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18.75px;
+  text-align: left;
+  color: #000000;
+  padding-right: 34px;
+}
+@media screen and (max-width: 768px) {
+  .breadcrumbs ul li {
+    font-size: 14px;
+    line-height: 16.41px;
+  }
+}
+.breadcrumbs ul li:last-child {
+  color: #797979;
+  font-weight: 400;
+}
+.breadcrumbs ul li:not(:last-child)::before {
+  content: " ";
+  position: absolute;
+  height: 2px;
+  width: 14px;
+  background: #000;
+  right: 10px;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.summary {
+  border: 2px solid #000000;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 460px;
+  width: 100%;
+  margin-left: auto;
+  margin-top: 30px;
+}
+@media screen and (max-width: 520px) {
+  .summary {
+    margin-top: 20px;
+    padding: 20px;
+  }
+}
+.summary > h5 {
+  font-family: "Dela Gothic One", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 28.6px;
+  text-align: left;
+  color: #000000;
+  margin-bottom: 24px;
+}
+@media screen and (max-width: 520px) {
+  .summary > h5 {
+    font-size: 20px;
+    margin-bottom: 14px;
+  }
+}
+.summary > p {
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20.8px;
+  text-align: left;
+  margin-bottom: 14px;
+  color: #000000;
+}
+@media screen and (max-width: 520px) {
+  .summary > p {
+    font-size: 14px;
+    margin-bottom: 6px;
+  }
+}
+.summary .discount_line {
+  position: relative;
+  width: 100%;
+  height: 60px;
+  border: 2px solid #000000;
+  border-radius: 10px;
+}
+@media screen and (max-width: 520px) {
+  .summary .discount_line {
+    height: 54px;
+  }
+}
+.summary .discount_line input {
+  border-radius: 10px;
+  color: #000;
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20.8px;
+  text-align: left;
+  color: #000000;
+  padding: 18px 32px 18px 16px;
+  max-width: 180px;
+  height: 56px;
+}
+.summary .discount_line button,
+.summary .discount_line a {
+  position: absolute;
+  right: -2px;
+  height: 100%;
+  border: 2px solid #000000;
+  border-radius: 10px;
+  box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.1019607843);
+  margin-left: auto;
+  background: #00c2cb;
+  top: -2px;
+  bottom: -2px;
+  height: 60px;
+  font-family: "Dela Gothic One", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18.82px;
+  text-align: center;
+  max-width: 130px;
+  width: 100%;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 520px) {
+  .summary .discount_line button,
+  .summary .discount_line a {
+    height: 54px;
+    max-width: 114px;
+    font-size: 12px;
+  }
+}
+.summary .summary_list {
+  border-top: 1px solid #dcdcdc;
+  border-bottom: 1px solid #dcdcdc;
+  padding: 22px 0 22px;
+  margin: 24px 0 14px;
+  gap: 14px;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 520px) {
+  .summary .summary_list {
+    gap: 10px;
+    margin: 14px 0 16px;
+  }
+}
+.summary .summary_list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+@media screen and (max-width: 520px) {
+  .summary .summary_list li {
+    gap: 10px;
+  }
+}
+.summary .summary_list li .title {
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18.75px;
+  text-align: left;
+  color: #102b2c;
+}
+@media screen and (max-width: 520px) {
+  .summary .summary_list li .title {
+    font-size: 14px;
+  }
+}
+.summary .summary_list li .total {
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25.6px;
+  text-align: right;
+  color: #102b2c;
+}
+@media screen and (max-width: 520px) {
+  .summary .summary_list li .total {
+    font-size: 14px;
+  }
+}
+.summary .summary_list li .price {
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 25.6px;
+  text-align: right;
+  color: #102b2c;
+}
+@media screen and (max-width: 520px) {
+  .summary .summary_list li .price {
+    font-size: 14px;
+  }
+}
+.summary > .total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 520px) {
+  .summary > .total {
+    margin-bottom: 14px;
+  }
+}
+.summary > .total span {
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 18.75px;
+  text-align: left;
+  color: #000;
+}
+.summary > .total span.price {
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 35.2px;
+  text-align: right;
+}
+.summary .order_continue {
+  font-family: "Dela Gothic One", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23.17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.1019607843);
+  background: #00c2cb;
+  width: 100%;
+  height: 66px;
+  text-transform: uppercase;
+}
+
+.quantity_input {
+  position: relative;
+  max-width: 120px;
+  width: 100%;
+}
+.quantity_input input {
+  padding: 0 32px;
+  width: 120px;
+  height: 44px;
+  box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.1019607843);
+  border: 2px solid #102b2c;
+  border-radius: 10px;
+  background: #fff;
+  font-family: Dela Gothic One;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20.27px;
+  text-align: center;
+  color: #000;
+}
+.quantity_input .minus {
+  background: url(/assets/images/minusIcon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  width: 34px;
+  height: 44px;
+  left: 4px;
+}
+.quantity_input .plus {
+  background: url(/assets/images/plusIcon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  width: 34px;
+  height: 44px;
+  right: 6px;
 }/*# sourceMappingURL=style.css.map */

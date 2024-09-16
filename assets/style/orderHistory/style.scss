@@ -1,0 +1,259 @@
+.profile_header {
+  @media screen and (max-width: 1180px) {
+    padding: 0 20px;
+  }
+  & .container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+
+    margin-top: 48px;
+    background: #f5f5f5;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 21px 40px;
+    border-radius: 10px;
+    margin-top: 22px;
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column-reverse;
+      align-items: flex-start;
+      padding: 12px 20px;
+      gap: 4px;
+    }
+
+    & h4 {
+      font-size: 28px;
+      font-weight: 400;
+      line-height: 39.2px;
+      text-align: left;
+      @media screen and (max-width: 768px) {
+        font-size: 16px;
+        line-height: 22.4px;
+      }
+    }
+
+    & > span {
+      font-family: "Dela Gothic One", sans-serif;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 28px;
+      text-align: right;
+      color: #102b2c;
+      text-transform: uppercase;
+      @media screen and (max-width: 768px) {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+.profile_content {
+  display: flex;
+  max-width: 1140px;
+  margin: 24px auto 100px;
+  gap: 40px;
+  @media screen and (max-width: 1180px) {
+    padding: 0 20px;
+  }
+  @media screen and (max-width: 768px) {
+    display: block;
+    margin: 14px auto 50px;
+  }
+  & .left_side {
+    max-width: 290px;
+    width: 100%;
+    @media screen and (max-width: 768px) {
+      max-width: 100%;
+    }
+
+    & ul {
+      background: #ffffff;
+      box-shadow: 0px 4px 50px 0px #0000001a;
+      border-radius: 10px;
+      width: 100%;
+      padding: 15px 0;
+      & li {
+        width: 100%;
+        & a {
+          position: relative;
+          display: flex;
+          align-items: center;
+          height: 40px;
+          width: 100%;
+          color: #797979;
+          padding: 0 24px;
+
+          font-family: Poppins;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 20.8px;
+          text-align: left;
+
+          &.current-page {
+            background: #00c2cb;
+            color: #fff;
+            font-family: "Poppins";
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 20.8px;
+            text-align: left;
+
+            &::before {
+              content: " ";
+              width: 4px;
+              background: #079ca3;
+              border-radius: 0 5px 5px 0;
+              height: 100%;
+              position: absolute;
+              left: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  & .right_side {
+    width: 100%;
+    @media screen and (max-width: 768px) {
+      margin-top: 24px;
+    }
+
+    & .sort_line {
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 24px;
+
+      @media screen and (max-width: 1180px) {
+        flex-direction: column;
+      }
+
+      & select {
+        border: 2px solid #102b2c;
+        border-radius: 10px;
+        padding: 13px 20px 14px;
+
+        @media screen and (max-width: 1180px) {
+          width: 100%;
+
+          &:first-child {
+            margin-bottom: 12px;
+          }
+        }
+
+        &:first-child {
+          margin-right: 20px;
+        }
+      }
+    }
+
+    & .order_list {
+      & ul {
+        & li {
+          display: grid;
+          grid-template-columns: 100px 160px 202px 168px 102px;
+          grid-template-rows: 1fr;
+          grid-column-gap: 8px;
+          grid-row-gap: 0px;
+          background: #f5f5f5;
+          padding: 18px 24px 20px;
+          color: #000000;
+          margin-bottom: 4px;
+          border-radius: 10px;
+
+          @media screen and (max-width: 1180px) {
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(5, 1fr);
+          }
+
+          & > div {
+            font-size: 14px;
+            text-align: left;
+
+            @media screen and (max-width: 1180px) {
+              display: grid;
+              grid-template-columns: 30% 1fr;
+              grid-template-rows: 1fr;
+              grid-column-gap: 0px;
+              grid-row-gap: 0px;
+              align-items: center;
+              // gap: 60px;
+            }
+
+            & > span {
+              display: none;
+              font-family: Roboto Flex;
+              font-size: 14px;
+              font-weight: 700;
+              line-height: 18.2px;
+              text-align: left;
+
+              @media screen and (max-width: 1180px) {
+                display: flex;
+              }
+            }
+
+            &.number {
+              font-weight: 700;
+            }
+
+            &.status {
+              color: #00c2cb;
+              font-weight: 700;
+              & > span {
+                color: #000;
+              }
+            }
+
+            &.link {
+              & .view {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 2px solid #000000;
+                border-radius: 10px;
+                padding: 11px 50px 11px 22px;
+                background: url("/assets/images/eye_view.svg");
+                background-repeat: no-repeat;
+                background-position: 90%;
+
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 18.2px;
+                text-align: left;
+                height: 40px;
+
+                @media screen and (max-width: 1180px) {
+                  max-width: 104px;
+                }
+              }
+            }
+          }
+
+          &.title {
+            background: #e3e3e3;
+            border-radius: 10px;
+            margin-bottom: 6px;
+
+            @media screen and (max-width: 1180px) {
+              display: none;
+            }
+            & > div {
+              font-family: Dela Gothic One;
+              font-size: 14px;
+              font-weight: 400;
+              line-height: 18.2px;
+              text-align: left;
+
+              &.status {
+                color: #000;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

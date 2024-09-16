@@ -1,0 +1,220 @@
+.profile_header {
+  @media screen and (max-width: 1180px) {
+    padding: 0 20px;
+  }
+  & .container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+
+    margin-top: 48px;
+    background: #f5f5f5;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 21px 40px;
+    border-radius: 10px;
+    margin-top: 22px;
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column-reverse;
+      align-items: flex-start;
+      padding: 12px 20px;
+      gap: 4px;
+    }
+
+    & h4 {
+      font-size: 28px;
+      font-weight: 400;
+      line-height: 39.2px;
+      text-align: left;
+      @media screen and (max-width: 768px) {
+        font-size: 16px;
+        line-height: 22.4px;
+      }
+    }
+
+    & > span {
+      font-family: "Dela Gothic One", sans-serif;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 28px;
+      text-align: right;
+      color: #102b2c;
+      text-transform: uppercase;
+      @media screen and (max-width: 768px) {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+.profile_content {
+  display: flex;
+  max-width: 1140px;
+  margin: 24px auto 100px;
+  gap: 40px;
+  @media screen and (max-width: 1180px) {
+    padding: 0 20px;
+  }
+  @media screen and (max-width: 768px) {
+    display: block;
+    margin: 14px auto 50px;
+  }
+  & .left_side {
+    max-width: 290px;
+    width: 100%;
+    @media screen and (max-width: 768px) {
+      max-width: 100%;
+    }
+
+    & .profile_info {
+      font-family: "Roboto Flex", sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 21px;
+      text-align: left;
+      color: #000;
+      display: none;
+      margin-bottom: 16px;
+      @media screen and (max-width: 768px) {
+        display: block;
+      }
+    }
+    & ul {
+      background: #ffffff;
+      box-shadow: 0px 4px 50px 0px #0000001a;
+      border-radius: 10px;
+      width: 100%;
+      padding: 15px 0;
+      & li {
+        width: 100%;
+        & a {
+          position: relative;
+          display: flex;
+          align-items: center;
+          height: 40px;
+          width: 100%;
+          color: #797979;
+          padding: 0 24px;
+
+          font-family: Poppins;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 20.8px;
+          text-align: left;
+
+          &.current-page {
+            background: #00c2cb;
+            color: #fff;
+            font-family: "Poppins";
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 20.8px;
+            text-align: left;
+
+            &::before {
+              content: " ";
+              width: 4px;
+              background: #079ca3;
+              border-radius: 0 5px 5px 0;
+              height: 100%;
+              position: absolute;
+              left: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  & .right_side {
+    width: 100%;
+    @media screen and (max-width: 768px) {
+      margin-top: 24px;
+    }
+    & .profile_info {
+      font-family: "Roboto Flex", sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 27px;
+      text-align: left;
+      color: #000000;
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
+    }
+
+    & .user_data {
+      margin-top: 26px;
+      & ul {
+        gap: 24px;
+        display: flex;
+        flex-direction: column;
+        & li {
+          display: flex;
+          flex-direction: column;
+          & label {
+            font-family: "Roboto Flex", sans-serif;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 16.41px;
+            text-align: left;
+            margin-bottom: 8px;
+            color: #000000;
+          }
+
+          & input {
+            color: #000000;
+            &.edit {
+              background-image: url("/assets/images/inputEditIcon.svg");
+              background-repeat: no-repeat;
+              background-position: 94%;
+            }
+
+            @media screen and (max-width: 768px) {
+              width: 100%;
+              max-width: 100%;
+            }
+          }
+
+          & .profile {
+            background: #f5f5f5;
+            max-width: 390px;
+            height: 60px;
+            width: 100%;
+            border-radius: 10px;
+            padding: 20px 24px;
+            border: 1px solid #dcdcdc;
+
+            font-family: "Roboto Flex", sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 18.75px;
+            text-align: left;
+            color: #000000;
+
+            @media screen and (max-width: 768px) {
+              width: 100%;
+              max-width: 100%;
+            }
+          }
+        }
+      }
+
+      & .save_button {
+        margin-top: 32px;
+        @media screen and (max-width: 768px) {
+          width: 100%;
+          max-width: 100%;
+          margin-top: 24px;
+
+          font-size: 14px;
+          line-height: 20.27px;
+          height: 54px;
+          padding: 14px 42px;
+        }
+      }
+    }
+  }
+}
