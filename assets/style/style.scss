@@ -146,6 +146,15 @@ header {
         min-width: 52px;
       }
 
+      &.open {
+        background: #00c2cb;
+        & #menu {
+          & span {
+            background: #fff;
+          }
+        }
+      }
+
       & #menu {
         width: 28px;
         height: 16px;
@@ -998,5 +1007,318 @@ b {
     width: 34px;
     height: 44px;
     right: 6px;
+  }
+}
+
+.content.group_managment {
+  height: 100%;
+  & > .container {
+    display: flex;
+    max-width: 100%;
+    height: 100%;
+
+    @media screen and (max-width: 1024px) {
+      padding: 0;
+    }
+
+    @media screen and (max-width: 768px) {
+      display: block;
+    }
+
+    & > .left_side {
+      width: 290px;
+      min-width: 290px;
+      min-height: 100vh;
+      background: #ffffff;
+      box-shadow: 0px 4px 50px 0px #0000001a;
+
+      @media screen and (max-width: 768px) {
+        width: 100%;
+        box-shadow: none;
+        min-height: auto;
+      }
+      & header {
+        position: fixed;
+        width: 290px;
+        height: 100vh;
+        padding: 26px 0;
+
+        @media screen and (max-width: 768px) {
+          position: relative;
+          height: 100%;
+          width: 100%;
+          padding: 20px 0 0;
+        }
+
+        &.stop-sidebar {
+          position: absolute;
+          bottom: 0;
+        }
+
+        & > .group_managment.container {
+          display: flex;
+
+          height: 100%;
+
+          & .navigation {
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            width: 100%;
+            gap: 0;
+
+            @media screen and (max-width: 768px) {
+              flex-direction: row;
+            }
+
+            @media screen and (max-width: 520px) {
+              padding-right: 30px;
+            }
+
+            & .shop_button {
+              display: none;
+              z-index: 2;
+              max-width: 52px;
+              width: 100%;
+              height: 42px;
+              padding: 0px 14px;
+              & #menu {
+                margin: 0 auto;
+              }
+
+              @media screen and (max-width: 768px) {
+                display: flex;
+              }
+            }
+
+            & .logo {
+              // display: none;
+              padding: 0;
+              max-width: 226px;
+              width: 100%;
+              z-index: 2;
+
+              @media screen and (max-width: 520px) {
+                max-width: 174px;
+              }
+            }
+
+            & nav {
+              @media screen and (min-width: 768px) {
+                width: 100%;
+                height: 100%;
+              }
+
+              & ul {
+                margin-top: 38px;
+                position: relative;
+                padding-left: 10px;
+                width: 100%;
+                max-width: 266px;
+                display: flex;
+                flex-direction: column;
+                gap: 14px;
+                transition: all 0.8s;
+
+                @media screen and (max-width: 768px) {
+                  position: absolute;
+                  left: 3%;
+                  right: 3%;
+                  padding: 4px 12px;
+                  height: auto;
+                  top: 18%;
+                  z-index: 1;
+                  height: 0;
+                  width: 0;
+                  overflow: hidden;
+                  border: none;
+                  background: none;
+                  border-radius: 10px;
+                  height: auto;
+                  width: 100%;
+                  max-width: 94%;
+                  max-height: 0;
+                  margin-top: 0;
+                  padding: 0;
+                  gap: 4px;
+                  background: #fff;
+                  opacity: 0;
+                }
+
+                &.open {
+                  @media screen and (max-width: 768px) {
+                    padding: 72px 0 20px;
+                    max-height: fit-content;
+                    width: 100%;
+                    opacity: 1;
+
+                    border: 2px solid #102b2c;
+
+                    & li {
+                      height: 44px;
+                      & a {
+                        &.current-page {
+                          height: 44px;
+                          &::before {
+                            height: 44px;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+
+                & li {
+                  width: 100%;
+                  height: 44px;
+                  display: flex;
+                  align-items: center;
+                  transition: all 0.8s;
+                  @media screen and (max-width: 768px) {
+                    padding-right: 10px;
+                    height: 0;
+                  }
+
+                  &.button_message {
+                    margin-top: 40px;
+                    height: 52px;
+
+                    @media screen and (max-width: 768px) {
+                      margin-top: 0;
+                      padding-right: 0;
+                    }
+
+                    & a {
+                      height: 52px;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      background: #000000;
+                      font-family: Dela Gothic One;
+                      font-size: 12px;
+                      font-weight: 400;
+                      line-height: 17.38px;
+                      text-align: center;
+                      color: #fff;
+                      padding: 0;
+                      margin: 0 auto;
+                      transition: all 0.8s;
+                      @media screen and (max-width: 768px) {
+                        margin: 0 20px;
+                        box-shadow: none;
+                      }
+                    }
+                  }
+
+                  &.button_logout {
+                    margin-top: auto;
+                    margin-bottom: 32px;
+                    height: 52px;
+
+                    @media screen and (max-width: 768px) {
+                      margin-top: 0;
+                      margin-bottom: auto;
+                      padding-right: 0;
+                    }
+
+                    & a {
+                      height: 52px;
+                      display: flex;
+                      align-items: center;
+                      justify-content: flex-start;
+                      background: #ffffff;
+                      font-family: Dela Gothic One;
+                      font-size: 12px;
+                      font-weight: 400;
+                      line-height: 17.38px;
+                      text-align: center;
+                      color: #fff;
+                      padding: 0;
+                      margin: 0 auto;
+                      color: #102b2c;
+                      background-image: url(/assets/images/logout_icon.svg);
+                      background-repeat: no-repeat;
+                      background-position: 32%;
+                      padding-left: 38%;
+                      text-align: center;
+
+                      @media screen and (max-width: 768px) {
+                        margin: 10px 20px 0;
+                        box-shadow: none;
+                      }
+                    }
+                  }
+
+                  & a {
+                    display: flex;
+                    align-items: center;
+                    padding-left: 14px;
+                    font-family: Poppins;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 18.2px;
+                    text-align: left;
+                    color: #797979;
+                    width: 100%;
+
+                    @media screen and (max-width: 768px) {
+                      padding-left: 22px;
+                    }
+
+                    &.current-page {
+                      font-size: 14px;
+                      font-weight: 700;
+                      line-height: 18.2px;
+                      color: #fff;
+                      border-radius: 0px 10px 10px 0px;
+                      background: #00c2cb;
+                      height: 44px;
+
+                      &::before {
+                        content: " ";
+                        position: absolute;
+
+                        height: 100%;
+                        width: 4px;
+                        height: 44px;
+                        background: #079ca3;
+                        border-radius: 0px 5px 5px 0px;
+                        left: 0;
+
+                        @media screen and (max-width: 768px) {
+                          height: 0;
+                        }
+                      }
+
+                      @media screen and (max-width: 768px) {
+                        padding-left: 22px;
+                        height: 0;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    & .right_side {
+      // max-width: 1094px;
+      max-width: 100%;
+      margin: 0 auto;
+      width: 100%;
+      padding: 0 20px;
+
+      @media screen and (max-width: 768px) {
+        padding: 0;
+      }
+    }
+  }
+}
+.content.group_managment {
+  & .container {
+    max-width: 100%;
   }
 }

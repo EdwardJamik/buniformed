@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quick order</title>
+  <link rel="stylesheet" href="./assets/style/group_invoice/style.css">
+  <link rel="stylesheet" href="./assets/style/style.css">
+  <script src="./assets/scripts/jquery.min.js"></script>
+  <script src="./assets/scripts/script.js"></script>
+</head>
+
+<body>
+
+  <main>
+    <div class="content group_managment">
+      <div class="container">
+        <div class="left_side">
+          <header id="sidebar">
+            <div class="container group_managment">
+              <div class="navigation">
+                <div class="shop_button">
+                  <div id="menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </div>
+
+                <img src="./assets/images/Logo.png" class="logo" alt="Logo" />
+
+                <nav>
+                  <ul class="menu_list">
+                    <li><a href="group_createOrder.html">Create New Order</a></li>
+                    <li><a href="group_pending.html">Pending approval orders</a></li>
+                    <li><a href="group_orderStatus.html">Order status/History</a></li>
+                    <li><a href="group_account.html">My Account</a></li>
+                    <li><a class="current-page" href="group_invoice.html">Invoices</a></li>
+                    <li><a href="group_program.html">Program overview</a></li>
+                    <li class="button_message"><a href="#" class="default_button message">Send us a message</a></li>
+                    <li class="button_logout"><a href="#" class="default_button logout">Logout</a></li>
+                  </ul>
+                </nav>
+
+              </div>
+            </div>
+          </header>
+        </div>
+        <div class="right_side">
+          <section>
+            <div class="quickorder_title">
+              <div class="container">
+                <div class="content">
+                  <div class="left_side">
+                    <h1 class="page_title">Invoices</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <div class="order_list">
+              <ul>
+                <li class="title">
+                  <div class="number">Invoice Number</div>
+                  <div class="date">Order #</div>
+                  <div class="total">Date</div>
+                  <div class="status">Status</div>
+                </li>
+                <li>
+                  <div class="number"><span>Invoices Number</span>123456</div>
+                  <div class="date"><span>Order</span>1234</div>
+                  <div class="total"><span>Date</span>Aug 12, 2024</div>
+                  <div class="status"><span>Status</span>Paid</div>
+                </li>
+                <li>
+                  <div class="number"><span>Invoices Number</span>123456</div>
+                  <div class="date"><span>Order</span>1234</div>
+                  <div class="total"><span>Date</span>Aug 12, 2024</div>
+                  <div class="status"><span>Status</span>Paid</div>
+                </li>
+                <li>
+                  <div class="number"><span>Invoices Number</span>123456</div>
+                  <div class="date"><span>Order</span>1234</div>
+                  <div class="total"><span>Date</span>Aug 12, 2024</div>
+                  <div class="status"><span>Status</span>Paid</div>
+                </li>
+                <li>
+                  <div class="number"><span>Invoices Number</span>123456</div>
+                  <div class="date"><span>Order</span>1234</div>
+                  <div class="total"><span>Date</span>Aug 12, 2024</div>
+                  <div class="status"><span>Status</span>Paid</div>
+                </li>
+                <li>
+                  <div class="number"><span>Invoices Number</span>123456</div>
+                  <div class="date"><span>Order</span>1234</div>
+                  <div class="total"><span>Date</span>Aug 12, 2024</div>
+                  <div class="status"><span>Status</span>Paid</div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+
+
+  </main>
+
+  <footer id="footer">
+    <div class="container">
+
+      <a href="#"><img src="/assets/images/LogoWhite.png" alt="Buniformed" class="logo"></a>
+
+      <div class="description">
+        <p>We want you to be dressed your best in uniform.</p>
+        <p>At B Uniformed, we help you every step of the way. Join our family to experience this first hand. What are
+          you
+          waiting for? Take the first step today.</p>
+      </div>
+
+      <div class="navigation">
+        <nav>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Shipping</a></li>
+            <li><a href="#">Returns</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="contact_list">
+        <div class="phone"><a href="tel:7329664591">732.966.4591</a></div>
+        <div class="location"><a href="#">457 Oak Glen Rd. Howell, NJ</a></div>
+        <div class="mail"><a href="mailto:test@gmail.com">info@buniformed.com</a></div>
+      </div>
+      <div class="contact_form">
+        <div class="contact_pre">
+          <h5>Contact Us today</h5>
+          <p>We Are Here To Assist You</p>
+        </div>
+        <form action="" class="form">
+          <input type="text" placeholder="Name" />
+          <input type="text" placeholder="Phone" />
+          <button class="submit_button">send</button>
+        </form>
+      </div>
+
+      <div class="bottom">
+        <div class="left_side">© 2024 All Rights Reserved</div>
+        <div class="right_side">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Term and Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    window.onscroll = function () {
+      var sidebar = document.getElementById("sidebar")
+      var footer = document.getElementById("footer").getBoundingClientRect()
+      var sidebarHeight = sidebar.offsetHeight
+      var windowHeight = window.innerHeight
+
+      if (window.innerWidth > 768) {
+        if (footer.top <= windowHeight) {
+          sidebar.style.position = 'fixed'
+          sidebar.style.top = footer.top - sidebarHeight + 'px'
+          console.log(windowHeight, sidebarHeight, footer.top)
+        } else {
+          sidebar.style.position = 'fixed'
+          sidebar.style.top = ''
+        }
+      }
+    };
+  </script>
+</body>
+
+</html>

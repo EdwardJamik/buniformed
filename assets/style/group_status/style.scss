@@ -1,0 +1,208 @@
+.quickorder_title {
+  margin-top: 22px;
+  margin-bottom: 20px;
+
+  @media screen and (max-width: 1024px) {
+    margin-bottom: 20px;
+    margin-top: 24px;
+  }
+
+  & .container {
+    max-width: 1140px;
+
+    @media screen and (max-width: 1024px) {
+      padding: 0 0;
+    }
+
+    @media screen and (max-width: 768px) {
+      padding: 0 20px;
+    }
+
+    & .content {
+      @media screen and (max-width: 1140px) {
+        flex-direction: column;
+      }
+
+      & .left_side {
+        background: #f5f5f5;
+        padding: 22px 40px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        @media screen and (max-width: 1140px) {
+          padding: 18px 20px;
+          margin-bottom: 24px;
+        }
+
+        & h1 {
+          color: #102b2c;
+          font-family: Dela Gothic One;
+          font-size: 24px;
+          font-weight: 400;
+          line-height: 33.6px;
+          text-align: left;
+          text-transform: uppercase;
+
+          @media screen and (max-width: 768px) {
+            font-size: 20px;
+            line-height: 28px;
+          }
+        }
+      }
+
+      & .right_side {
+        padding: 0;
+      }
+    }
+  }
+}
+
+.sort_line {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 24px;
+
+  @media screen and (max-width: 1180px) {
+    flex-direction: column;
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 0 20px;
+  }
+
+  & select {
+    border: 2px solid #102b2c;
+    border-radius: 10px;
+    padding: 13px 20px 14px;
+
+    @media screen and (max-width: 1180px) {
+      width: 100%;
+
+      &:first-child {
+        margin-bottom: 12px;
+      }
+    }
+
+    &:first-child {
+      margin-right: 20px;
+    }
+  }
+}
+
+.order_list {
+  padding-bottom: 50px;
+  @media screen and (max-width: 768px) {
+    padding: 0 20px 50px;
+  }
+  & ul {
+    & li {
+      display: grid;
+      grid-template-columns: 13.7% 21.9% 27.6% 23% 13.9%;
+      grid-template-rows: 1fr;
+      grid-column-gap: 8px;
+      grid-row-gap: 0px;
+      background: #f5f5f5;
+      padding: 18px 24px 20px;
+      color: #000000;
+      margin-bottom: 4px;
+      border-radius: 10px;
+      width: 100%;
+
+      @media screen and (max-width: 1180px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 1fr);
+      }
+
+      @media screen and (max-width: 768px) {
+        margin-bottom: 14px;
+      }
+
+      & > div {
+        font-size: 14px;
+        text-align: left;
+
+        @media screen and (max-width: 1180px) {
+          display: grid;
+          grid-template-columns: 30% 1fr;
+          grid-template-rows: 1fr;
+          grid-column-gap: 0px;
+          grid-row-gap: 0px;
+          align-items: center;
+          // gap: 60px;
+        }
+
+        & > span {
+          display: none;
+          font-family: Roboto Flex;
+          font-size: 14px;
+          font-weight: 700;
+          line-height: 18.2px;
+          text-align: left;
+
+          @media screen and (max-width: 1180px) {
+            display: flex;
+          }
+        }
+
+        &.number {
+          font-weight: 700;
+        }
+
+        &.status {
+          color: #00c2cb;
+          font-weight: 700;
+          & > span {
+            color: #000;
+          }
+        }
+
+        &.link {
+          & .view {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid #000000;
+            border-radius: 10px;
+            padding: 11px 50px 11px 22px;
+            background: url("/assets/images/eye_view.svg");
+            background-repeat: no-repeat;
+            background-position: 90%;
+
+            max-width: 104px;
+            width: 100%;
+
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 18.2px;
+            text-align: left;
+            height: 40px;
+
+            @media screen and (max-width: 1180px) {
+              max-width: 104px;
+            }
+          }
+        }
+      }
+
+      &.title {
+        background: #e3e3e3;
+        border-radius: 10px;
+        margin-bottom: 6px;
+
+        @media screen and (max-width: 1180px) {
+          display: none;
+        }
+        & > div {
+          font-family: Dela Gothic One;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 18.2px;
+          text-align: left;
+
+          &.status {
+            color: #000;
+          }
+        }
+      }
+    }
+  }
+}

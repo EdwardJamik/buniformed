@@ -1,0 +1,214 @@
+.program_title {
+  margin-top: 22px;
+  margin-bottom: 20px;
+
+  @media screen and (max-width: 1024px) {
+    margin-bottom: 20px;
+    margin-top: 24px;
+  }
+
+  & .container {
+    max-width: 1140px;
+
+    @media screen and (max-width: 1024px) {
+      padding: 0 0;
+    }
+
+    @media screen and (max-width: 768px) {
+      padding: 0 20px;
+    }
+
+    & .content {
+      @media screen and (max-width: 1140px) {
+        flex-direction: column;
+      }
+
+      & .left_side {
+        background: #f5f5f5;
+        padding: 22px 40px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        @media screen and (max-width: 1140px) {
+          padding: 18px 20px;
+          margin-bottom: 24px;
+        }
+
+        & h1 {
+          color: #102b2c;
+          font-family: Dela Gothic One;
+          font-size: 24px;
+          font-weight: 400;
+          line-height: 33.6px;
+          text-align: left;
+          text-transform: uppercase;
+
+          @media screen and (max-width: 768px) {
+            font-size: 20px;
+            line-height: 28px;
+          }
+        }
+      }
+
+      & .right_side {
+        padding: 0;
+      }
+    }
+  }
+}
+
+.banner {
+  width: 100%;
+  @media screen and (max-width: 768px) {
+    padding: 0 20px;
+  }
+  & img {
+    margin: 0 auto;
+    border-radius: 10px;
+  }
+}
+
+.program_list {
+  display: grid;
+  grid-template-columns: 31.4% 31.4% 31.4%;
+  justify-content: center;
+  grid-template-rows: 1fr;
+  grid-column-gap: 24px;
+  grid-row-gap: 24px;
+  margin-top: 24px;
+
+  @media screen and (max-width: 1280px) {
+    grid-template-columns: 1fr;
+    margin-bottom: 50px;
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 0 20px;
+  }
+
+  & > div {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 4px 50px 0px #0000001a;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 20px 24px 24px;
+    height: 100%;
+
+    @media screen and (max-width: 768px) {
+      padding: 16px 20px 20px;
+    }
+
+    & h5 {
+      font-family: Dela Gothic One;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 22.4px;
+      text-align: left;
+      color: #102b2c;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+
+      @media screen and (max-width: 768px) {
+        font-size: 14px;
+      }
+    }
+
+    & > ul {
+      margin-bottom: 20px;
+    }
+
+    & .default_button {
+      background: #000000;
+      color: #fff;
+      width: 100%;
+      margin-top: auto;
+      padding: 0 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      @media screen and (max-width: 768px) {
+        font-size: 12px;
+        height: 54px;
+      }
+    }
+  }
+
+  & .styles {
+    & ul {
+      display: flex;
+      flex-direction: column;
+      padding-left: 18px;
+      gap: 10px;
+      & li {
+        font-family: Roboto Flex;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 18.75px;
+        text-align: left;
+        color: #000;
+        list-style: auto;
+      }
+    }
+  }
+
+  & .allowed {
+    & ul {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 1fr;
+      grid-column-gap: 8px;
+      grid-row-gap: 8px;
+      & li {
+        font-family: Roboto Flex;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 18.75px;
+        text-align: left;
+        color: #000;
+      }
+    }
+  }
+
+  & .departament_color {
+    & ul {
+      gap: 4px;
+      display: flex;
+      flex-direction: column;
+      & li {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 8px;
+        grid-row-gap: 4px;
+
+        font-family: Roboto Flex;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16.41px;
+        text-align: left;
+        color: #000;
+
+        padding: 10px 16px;
+        border-radius: 10px;
+        background: #f5f5f5;
+
+        @media screen and (max-width: 768px) {
+          font-size: 12px;
+        }
+
+        &.title {
+          font-size: 16px;
+          line-height: 18.75px;
+          text-align: left;
+          color: #000;
+          background: none;
+
+          @media screen and (max-width: 768px) {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
