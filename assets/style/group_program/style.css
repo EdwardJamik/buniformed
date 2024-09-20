@@ -131,6 +131,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.3s;
+}
+.program_list > div .default_button:hover {
+  background: none;
+  color: #000;
 }
 @media screen and (max-width: 768px) {
   .program_list > div .default_button {

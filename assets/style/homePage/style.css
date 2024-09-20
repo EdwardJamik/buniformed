@@ -772,6 +772,11 @@
   font-weight: 400;
   line-height: 23.17px;
   margin-top: 24px;
+  transition: all 0.3s;
+}
+.programs .container .content .left_side .default_button:hover {
+  background: none;
+  color: #102b2c;
 }
 @media screen and (max-width: 480px) {
   .programs .container .content .left_side .default_button {

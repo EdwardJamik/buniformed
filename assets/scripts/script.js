@@ -5,6 +5,31 @@ $(document).ready(function () {
 		$('.menu_list').toggleClass('open');
 	});
 
+	var $menuList = $('.menu_list');
+	var $menuItems = $menuList.find('li:not([class])');
+	var $currentPage = $menuItems.find('a.current-page');
+
+	$menuList.on('mouseenter', 'li', function () {
+		if (!$(this).attr('class')) {
+			$menuItems.find('a').removeClass('current-page');
+			$(this).find('a').addClass('current-page');
+		} else {
+			$menuItems.find('a').removeClass('current-page');
+			$currentPage.addClass('current-page');
+		}
+	});
+
+	$menuList.on('mouseleave', function (e) {
+		var $relatedTarget = $(e.relatedTarget);
+		if (
+			!$relatedTarget.is('li') &&
+			!$relatedTarget.closest('.menu_list').length
+		) {
+			$menuItems.find('a').removeClass('current-page');
+			$currentPage.addClass('current-page');
+		}
+	});
+
 	$('.dropdown_list ul li').click(function () {
 		$(this).toggleClass('open');
 	});

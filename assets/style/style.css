@@ -437,6 +437,12 @@ span.themysion {
   border-radius: 10px;
   text-transform: uppercase;
   padding: 22px 42px;
+  transition: all 0.3s;
+}
+.red_button:hover {
+  background: none;
+  border: 2px solid #b12025;
+  color: #b12025;
 }
 @media screen and (max-width: 1024px) {
   .red_button {
@@ -994,6 +1000,12 @@ b {
   max-width: 130px;
   width: 100%;
   text-transform: uppercase;
+  transition: all 0.3s;
+}
+.summary .discount_line button:hover,
+.summary .discount_line a:hover {
+  background: #102b2c;
+  color: #fff;
 }
 @media screen and (max-width: 520px) {
   .summary .discount_line button,
@@ -1346,7 +1358,11 @@ b {
   color: #fff;
   padding: 0;
   margin: 0 auto;
-  transition: all 0.8s;
+  transition: all 0.3s;
+}
+.content.group_managment > .container > .left_side header > .group_managment.container .navigation nav ul li.button_message a:hover {
+  background: none;
+  color: #000;
 }
 @media screen and (max-width: 768px) {
   .content.group_managment > .container > .left_side header > .group_managment.container .navigation nav ul li.button_message a {
@@ -1366,7 +1382,7 @@ b {
     padding-right: 0;
   }
 }
-.content.group_managment > .container > .left_side header > .group_managment.container .navigation nav ul li.button_logout a {
+.content.group_managment > .container > .left_side header > .group_managment.container .navigation nav ul li.button_logout a, .content.group_managment > .container > .left_side header > .group_managment.container .navigation nav ul li.button_logout button {
   height: 52px;
   display: flex;
   align-items: center;
@@ -1386,9 +1402,13 @@ b {
   background-position: 32%;
   padding-left: 38%;
   text-align: center;
+  transition: all 0.3s;
+}
+.content.group_managment > .container > .left_side header > .group_managment.container .navigation nav ul li.button_logout a:hover, .content.group_managment > .container > .left_side header > .group_managment.container .navigation nav ul li.button_logout button:hover {
+  border-color: #b12025;
 }
 @media screen and (max-width: 768px) {
-  .content.group_managment > .container > .left_side header > .group_managment.container .navigation nav ul li.button_logout a {
+  .content.group_managment > .container > .left_side header > .group_managment.container .navigation nav ul li.button_logout a, .content.group_managment > .container > .left_side header > .group_managment.container .navigation nav ul li.button_logout button {
     margin: 10px 20px 0;
     box-shadow: none;
   }
@@ -1454,4 +1474,13 @@ b {
 
 .content.group_managment .container {
   max-width: 100%;
+}
+
+select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-image: url("/assets/images/selectAppeatanceIcon.svg");
+  background-repeat: no-repeat;
+  background-position: 94%;
 }/*# sourceMappingURL=style.css.map */

@@ -399,6 +399,12 @@
   background-repeat: no-repeat;
   background-position: 30px;
   background-size: auto;
+  transition: all 0.3s;
+}
+.quickorder_title .container .content .right_side .upload_button:hover {
+  background-color: #102b2c;
+  border: 2px solid #fff;
+  color: #fff;
 }
 @media screen and (max-width: 1440px) {
   .quickorder_title .container .content .right_side .upload_button {
@@ -412,17 +418,14 @@
 .employee_info .container {
   max-width: 100%;
 }
-@media screen and (max-width: 1440px) {
-  .employee_info .container .list {
-    width: 100%;
-  }
+.employee_info .container .list {
+  width: 100%;
 }
 .employee_info .container .list li {
   display: flex;
   align-items: flex-end;
   gap: 12px;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: 100%;
   border-bottom: 1px solid #dcdcdc;
   padding: 20px 0 20px;
 }
@@ -437,11 +440,7 @@
 .employee_info .container .list li > div {
   display: flex;
   flex-direction: column;
-}
-@media screen and (max-width: 1440px) {
-  .employee_info .container .list li > div {
-    width: 100%;
-  }
+  width: 100%;
 }
 .employee_info .container .list li > div label {
   color: #102b2c;
@@ -451,7 +450,7 @@
   text-align: left;
   margin-bottom: 6px;
 }
-.employee_info .container .list li > div input {
+.employee_info .container .list li > div > input {
   border: 2px solid #102b2c;
   box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.1019607843);
   border-radius: 10px;
@@ -459,26 +458,58 @@
   color: #102b2c;
   padding: 12px 20px;
 }
-.employee_info .container .list li > div input.employee {
+.employee_info .container .list li > div > input.employee {
   width: 160px;
   height: 48px;
 }
+@media screen and (min-width: 1440px) {
+  .employee_info .container .list li > div > input.employee {
+    width: 100%;
+    max-width: 100%;
+  }
+}
 @media screen and (max-width: 1440px) {
-  .employee_info .container .list li > div input.employee {
+  .employee_info .container .list li > div > input.employee {
     width: 100%;
   }
 }
-.employee_info .container .list li > div input.quantity {
+.employee_info .container .list li > div > input.quantity {
   width: 100%;
+}
+@media screen and (min-width: 1440px) {
+  .employee_info .container .list li > div > input.quantity {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+.employee_info .container .list li > div .quantity_input {
+  max-width: 120px;
+  height: 48px;
+}
+@media screen and (min-width: 1440px) {
+  .employee_info .container .list li > div .quantity_input {
+    width: 100%;
+    max-width: 100%;
+  }
 }
 @media screen and (max-width: 1440px) {
   .employee_info .container .list li > div .quantity_input {
     max-width: 100%;
   }
 }
+.employee_info .container .list li > div .quantity_input .plus, .employee_info .container .list li > div .quantity_input .minus {
+  height: 48px;
+}
 .employee_info .container .list li > div .quantity_input input {
-  width: 100px;
-  height: 44px;
+  width: 100%;
+  max-width: 120px;
+  height: 48px;
+}
+@media screen and (min-width: 1440px) {
+  .employee_info .container .list li > div .quantity_input input {
+    width: 100%;
+    max-width: 100%;
+  }
 }
 @media screen and (max-width: 1440px) {
   .employee_info .container .list li > div .quantity_input input {
@@ -494,6 +525,11 @@
   width: 140px;
   padding: 12px 20px;
 }
+@media screen and (min-width: 1440px) {
+  .employee_info .container .list li > div select {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 1440px) {
   .employee_info .container .list li > div select {
     width: 100%;
@@ -501,6 +537,12 @@
 }
 .employee_info .container .list li > div select.departament {
   width: 180px;
+}
+@media screen and (min-width: 1440px) {
+  .employee_info .container .list li > div select.departament {
+    width: 100%;
+    max-width: 100%;
+  }
 }
 @media screen and (max-width: 1440px) {
   .employee_info .container .list li > div select.departament {
@@ -543,6 +585,11 @@
   box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.1019607843);
   max-width: 450px;
   width: 100%;
+}
+.employee_info .container .buttons .red_button.add_more:hover {
+  background: none;
+  border: 2px solid #102b2c;
+  color: #102b2c;
 }
 @media screen and (max-width: 1440px) {
   .employee_info .container .buttons .red_button.add_more {
@@ -894,6 +941,13 @@
   max-width: 130px;
   width: 100%;
   text-transform: uppercase;
+  transition: all 0.3s;
+}
+.orders .container .content .summary .discount_line button:hover,
+.orders .container .content .summary .discount_line a:hover {
+  background: #102b2c;
+  color: #fff;
+  font-size: 14px;
 }
 @media screen and (max-width: 520px) {
   .orders .container .content .summary .discount_line button,
@@ -1008,4 +1062,10 @@
   width: 100%;
   height: 66px;
   text-transform: uppercase;
+  transition: all 0.3s;
+}
+.orders .container .content .summary .order_continue:hover {
+  background: #102b2c;
+  color: #fff;
+  font-size: 17px;
 }/*# sourceMappingURL=style.css.map */

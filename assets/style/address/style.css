@@ -243,6 +243,11 @@
   width: 100%;
   padding: 16px 20px;
   font-size: 12px;
+  transition: all 0.3s;
+}
+.profile_content .right_side .address_list > div .default_button:hover {
+  background: none;
+  color: #000;
 }
 @media screen and (max-width: 768px) {
   .profile_content .right_side .address_list > div .default_button {
