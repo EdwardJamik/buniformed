@@ -113,6 +113,12 @@
             }
 
             & .quantity_input {
+              &.mobile {
+                display: none;
+                @media screen and (max-width: 768px) {
+                  display: block;
+                }
+              }
               @media screen and (max-width: 768px) {
                 height: 34px;
                 & input {
@@ -214,6 +220,12 @@
           & > div {
             &.price,
             &.total {
+              & > span {
+                display: none;
+                @media screen and (max-width: 768px) {
+                  display: block;
+                }
+              }
               @media screen and (max-width: 768px) {
                 display: grid;
                 grid-template-columns: repeat(2, 50%);

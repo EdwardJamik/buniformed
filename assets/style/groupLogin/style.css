@@ -1,0 +1,427 @@
+.group_login {
+  margin-top: 50px;
+}
+@media screen and (max-width: 1140px) {
+  .group_login {
+    margin-top: 24px;
+  }
+}
+.group_login.top_content .container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1140px;
+  width: 100%;
+}
+@media screen and (max-width: 1180px) {
+  .group_login.top_content .container {
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: 1140px) {
+  .group_login.top_content .container {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 1140px) {
+  .group_login.top_content .container .left_side {
+    margin: 16px auto 30px;
+  }
+}
+.group_login.top_content .container .left_side .top_image {
+  position: relative;
+  max-width: 642px;
+  width: 100%;
+  padding: 232px 90px 128px;
+}
+@media screen and (max-width: 768px) {
+  .group_login.top_content .container .left_side .top_image {
+    padding: 120px 50px 66px;
+    max-width: 336px;
+    margin: 0 auto;
+  }
+}
+.group_login.top_content .container .left_side .top_image img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.group_login.top_content .container .left_side .top_image h1 {
+  font-family: Dela Gothic One;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 50.4px;
+  text-align: center;
+  color: #102b2c;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 768px) {
+  .group_login.top_content .container .left_side .top_image h1 {
+    font-size: 18px;
+    line-height: 25.2px;
+  }
+}
+.group_login.top_content .container .left_side .top_image > p {
+  margin-top: 8px;
+  font-family: Roboto Flex;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23.4px;
+  text-align: center;
+  color: #000;
+}
+@media screen and (max-width: 768px) {
+  .group_login.top_content .container .left_side .top_image > p {
+    font-size: 10px;
+    line-height: 13px;
+  }
+}
+.group_login.top_content .container .left_side .bottom_line {
+  margin-top: 24px;
+}
+.group_login.top_content .container .left_side .bottom_line h5 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: left;
+  color: #000;
+}
+@media screen and (max-width: 768px) {
+  .group_login.top_content .container .left_side .bottom_line h5 {
+    font-size: 18px;
+    line-height: 23.4px;
+    margin-bottom: 12px;
+  }
+}
+.group_login.top_content .container .left_side .bottom_line p {
+  margin-top: 12px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.8px;
+  text-align: left;
+  color: #000;
+  max-width: 510px;
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .group_login.top_content .container .left_side .bottom_line p {
+    font-size: 14px;
+    line-height: 18.2px;
+  }
+}
+.group_login.top_content .container .right_side {
+  max-width: 460px;
+  width: 100%;
+}
+@media screen and (max-width: 1140px) {
+  .group_login.top_content .container .right_side {
+    margin: 0 auto;
+  }
+}
+.group_login.top_content .container .right_side .login_form {
+  max-width: 460px;
+  width: 100%;
+}
+.group_login.top_content .container .right_side .login_form form {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #000000;
+  background: #ffffff;
+  max-width: 460px;
+  width: 100%;
+  border-radius: 10px;
+  padding: 50px;
+}
+@media screen and (max-width: 768px) {
+  .group_login.top_content .container .right_side .login_form form {
+    padding: 20px;
+  }
+}
+.group_login.top_content .container .right_side .login_form form h5 {
+  font-family: Dela Gothic One;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 30.8px;
+  color: #102b2c;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 26px;
+}
+@media screen and (max-width: 768px) {
+  .group_login.top_content .container .right_side .login_form form h5 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+.group_login.top_content .container .right_side .login_form form input {
+  border: 2px solid #000000;
+  border-radius: 10px;
+  width: 100%;
+  margin-bottom: 20px;
+  height: 66px;
+  padding: 26px 56px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18.75px;
+  text-align: left;
+  color: #102b2c;
+}
+@media screen and (max-width: 768px) {
+  .group_login.top_content .container .right_side .login_form form input {
+    font-size: 14px;
+    line-height: 16.41px;
+    padding: 18px 50px;
+    margin-bottom: 14px;
+  }
+}
+.group_login.top_content .container .right_side .login_form form input.mail {
+  background-image: url("/assets/images/mailIconBlue.svg");
+  background-repeat: no-repeat;
+  background-position: 24px;
+}
+@media screen and (max-width: 768px) {
+  .group_login.top_content .container .right_side .login_form form input.mail {
+    background-position: 20px;
+  }
+}
+.group_login.top_content .container .right_side .login_form form input.password {
+  background-image: url("/assets/images/password_input_icon.svg");
+  background-repeat: no-repeat;
+  background-position: 25px;
+}
+@media screen and (max-width: 768px) {
+  .group_login.top_content .container .right_side .login_form form input.password {
+    background-position: 20px;
+  }
+}
+.group_login.top_content .container .right_side .login_form form .login_button {
+  background: #000;
+  color: #fff;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+.group_login.top_content .container .right_side .login_form form .login_button:hover {
+  background: #fff;
+  color: #102b2c;
+}
+@media screen and (max-width: 768px) {
+  .group_login.top_content .container .right_side .login_form form .login_button {
+    height: 54px;
+    font-size: 14px;
+    line-height: 20.27px;
+    padding: 0;
+  }
+}
+.group_login.top_content .container .right_side .login_form form a {
+  color: #00c2cb;
+  text-decoration: underline;
+  text-align: center;
+  margin-top: 16px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.8px;
+  text-align: center;
+  transition: color 0.3s ease-in-out;
+}
+@media screen and (max-width: 768px) {
+  .group_login.top_content .container .right_side .login_form form a {
+    font-size: 14px;
+    line-height: 18.2px;
+  }
+}
+.group_login.top_content .container .right_side .login_form form a:hover {
+  color: #102b2c;
+}
+.group_login.top_content .container .right_side .login_form form a.sign_up {
+  margin-top: 14px;
+}
+@media screen and (max-width: 768px) {
+  .group_login.top_content .container .right_side .login_form form a.sign_up {
+    margin-top: 10px;
+  }
+}
+
+.works_list .container {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 50px;
+  max-width: 1140px;
+}
+@media screen and (max-width: 1140px) {
+  .works_list .container {
+    flex-direction: column;
+  }
+}
+.works_list .container .left_side {
+  max-width: 520px;
+  width: 100%;
+}
+@media screen and (max-width: 1140px) {
+  .works_list .container .left_side {
+    margin: 0 auto;
+    max-width: 768px;
+  }
+}
+.works_list .container .left_side .question_content {
+  margin-top: 50px;
+}
+@media screen and (max-width: 1140px) {
+  .works_list .container .left_side .question_content {
+    margin-top: 30px;
+  }
+}
+.works_list .container .left_side .question_content h4 {
+  font-family: Dela Gothic One;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 30.8px;
+  text-align: left;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+  .works_list .container .left_side .question_content h4 {
+    margin-bottom: 16px;
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+.works_list .container .left_side .question_content .dropdown_list ul li {
+  position: relative;
+  background: #00c2cb;
+  box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.1019607843);
+  border: 2px solid #102b2c;
+  border-radius: 10px;
+  padding: 14px 20px;
+  transition: 0.8s;
+  cursor: pointer;
+  display: flex;
+}
+@media screen and (max-width: 768px) {
+  .works_list .container .left_side .question_content .dropdown_list ul li {
+    padding: 14px 20px;
+  }
+}
+.works_list .container .left_side .question_content .dropdown_list ul li::before {
+  content: " ";
+  position: absolute;
+  right: 30px;
+  top: 32px;
+  width: 14px;
+  height: 8px;
+  background-image: url("/assets/images/arrow_dropdown.svg");
+}
+@media screen and (max-width: 768px) {
+  .works_list .container .left_side .question_content .dropdown_list ul li::before {
+    width: 11px;
+    height: 6px;
+    background-size: contain;
+    top: 24px;
+    right: 20px;
+  }
+}
+.works_list .container .left_side .question_content .dropdown_list ul li.open::before {
+  transform: rotateZ(180deg);
+}
+.works_list .container .left_side .question_content .dropdown_list ul li.open .content .answer {
+  margin-top: 10px;
+  max-height: 1000px;
+  margin-bottom: 12px;
+}
+.works_list .container .left_side .question_content .dropdown_list ul li:not(:first-child) {
+  margin-top: 20px;
+}
+.works_list .container .left_side .question_content .dropdown_list ul li > span {
+  position: absolute;
+  left: 20px;
+  font-family: Dela Gothic One;
+  font-size: 28px;
+  font-weight: 400;
+  text-align: left;
+  color: #fff;
+}
+.works_list .container .left_side .question_content .dropdown_list ul li .content .question {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 30.8px;
+  text-align: left;
+  padding-left: 62px;
+  color: #fff;
+}
+@media screen and (max-width: 768px) {
+  .works_list .container .left_side .question_content .dropdown_list ul li .content .question {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+  }
+}
+.works_list .container .left_side .question_content .dropdown_list ul li .content .answer {
+  transition: 0.5s;
+  max-height: 0;
+  overflow: hidden;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #fff;
+  margin-top: 0;
+}
+@media screen and (max-width: 1140px) {
+  .works_list .container .right_side {
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 1180px) {
+  .works_list .container .right_side .container {
+    padding: 0 20px;
+  }
+}
+.works_list .container .right_side .container .question {
+  position: relative;
+  top: -40px;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 434px;
+  max-width: 290px;
+  width: 100%;
+}
+@media screen and (max-width: 1140px) {
+  .works_list .container .right_side .container .question {
+    top: 0;
+  }
+}
+.works_list .container .right_side .container .question h5 {
+  font-family: Dela Gothic One;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 30.8px;
+  text-align: left;
+  color: #102b2c;
+  max-width: 278px;
+  width: 100%;
+  text-transform: uppercase;
+}
+.works_list .container .right_side .container .question .red_button {
+  margin-top: 14px;
+  width: 100%;
+}
+.works_list .container .right_side .container .question img {
+  position: absolute;
+  top: -50px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+@media screen and (max-width: 1140px) {
+  .works_list .container .right_side .container .question img {
+    top: 0;
+  }
+}/*# sourceMappingURL=style.css.map */

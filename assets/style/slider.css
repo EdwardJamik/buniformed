@@ -1,0 +1,42 @@
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-1750px);
+  }
+}
+.brands_slider {
+  background: white;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 960px;
+}
+.brands_slider::before, .brands_slider::after {
+  content: "";
+  height: 100px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+.brands_slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+.brands_slider::before {
+  left: 0;
+  top: 0;
+}
+.brands_slider .slide-track {
+  animation: scroll 40s linear infinite;
+  display: flex;
+  width: 3500px;
+}
+.brands_slider .slide {
+  height: 100px;
+  width: 250px;
+}/*# sourceMappingURL=slider.css.map */
