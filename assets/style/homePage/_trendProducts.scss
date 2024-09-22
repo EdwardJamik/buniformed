@@ -56,6 +56,15 @@
             background: #fff;
             padding: 24px 24px 18px;
 
+            transition: border-color 0.3s ease-in-out;
+
+            &:hover {
+              border-color: #b12025;
+              & .product_image {
+                top: -6px;
+              }
+            }
+
             @media screen and (max-width: 768px) {
               padding: 20px 20px;
             }
@@ -106,6 +115,8 @@
               display: flex;
               justify-content: center;
               align-items: center;
+              transition: all 0.3s ease-in-out;
+              top: 0;
 
               @media screen and (max-width: 768px) {
                 height: 172px;
@@ -196,7 +207,11 @@
                 }
               }
             }
-
+            &:hover {
+              & .title {
+                color: #b12025;
+              }
+            }
             & .new {
               position: absolute;
               top: 10px;

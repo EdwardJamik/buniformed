@@ -74,6 +74,16 @@
     text-align: left;
   }
 }
+.quickorder_title .container .content .right_side {
+  max-width: 342px;
+  width: 100%;
+}
+@media screen and (max-width: 1180px) {
+  .quickorder_title .container .content .right_side {
+    width: 100%;
+    max-width: 335px;
+  }
+}
 .quickorder_title .container .content .right_side .upload_button {
   background: #00c2cb;
   font-family: "Dela Gothic One", sans-serif;
@@ -83,11 +93,16 @@
   text-align: left;
   max-width: 342px;
   width: 100%;
-  padding: 20px 26px 20px 66px;
+  padding: 20px 16px 20px 66px;
   background-image: url("/assets/images/uploadIcon.svg");
   background-repeat: no-repeat;
   background-position: 30px;
   background-size: auto;
+}
+.quickorder_title .container .content .right_side .upload_button:hover {
+  background-color: #102b2c;
+  color: #fff;
+  border-color: #102b2c;
 }
 @media screen and (max-width: 1180px) {
   .quickorder_title .container .content .right_side .upload_button {
@@ -208,6 +223,10 @@
   box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.1019607843);
   max-width: 450px;
   width: 100%;
+}
+.employee_info .container .buttons .red_button.add_more:hover {
+  color: #102b2c;
+  background: none;
 }
 @media screen and (max-width: 1180px) {
   .employee_info .container .buttons .red_button.add_more {
@@ -553,6 +572,13 @@
   max-width: 130px;
   width: 100%;
   text-transform: uppercase;
+  transition: all 0.3s;
+}
+.orders .container .content .summary .discount_line button:hover,
+.orders .container .content .summary .discount_line a:hover {
+  background: #102b2c;
+  color: #fff;
+  font-size: 14px;
 }
 @media screen and (max-width: 520px) {
   .orders .container .content .summary .discount_line button,
@@ -667,4 +693,10 @@
   width: 100%;
   height: 66px;
   text-transform: uppercase;
+  transition: all 0.3s;
+}
+.orders .container .content .summary .order_continue:hover {
+  background: #102b2c;
+  color: #fff;
+  font-size: 17px;
 }/*# sourceMappingURL=style.css.map */

@@ -414,6 +414,9 @@ header .navigation .groupsLogin_button .default_button {
   justify-content: center;
   color: #102b2c;
 }
+header .navigation .groupsLogin_button .default_button:hover {
+  color: #fff;
+}
 
 span.blue {
   color: #00c2cb;
@@ -464,6 +467,11 @@ span.themysion {
   color: #102b2c;
   text-transform: uppercase;
   padding: 22px 42px;
+  transition: all 0.3s;
+}
+.default_button:hover {
+  background: #102b2c;
+  color: #fff;
 }
 @media screen and (max-width: 1024px) {
   .default_button {
@@ -592,10 +600,19 @@ footer .container .navigation ul li a {
   font-size: 16px;
   font-weight: 700;
   line-height: 24px;
+  transition: all 0.3s ease-in-out;
+}
+footer .container .navigation ul li a:hover {
+  color: #b12025;
+  font-size: 16.5px;
 }
 @media screen and (max-width: 480px) {
   footer .container .navigation ul li a {
     font-size: 14px;
+  }
+  footer .container .navigation ul li a:hover {
+    color: #b12025;
+    font-size: 14.5px;
   }
 }
 footer .container .contact_list {
@@ -643,6 +660,10 @@ footer .container .contact_list > div a {
   line-height: 24px;
   text-align: center;
   color: #00c2cb;
+  transition: color 0.3s ease-in-out;
+}
+footer .container .contact_list > div a:hover {
+  color: #b12025;
 }
 footer .container .contact_list > div:not(:last-child)::after {
   content: " ";
