@@ -1798,4 +1798,14 @@ select {
 
 ::-webkit-scrollbar-button {
   display: none;
+}
+
+.edit_button,
+.edit {
+  transition: all 0.3s ease-in-out;
+}
+.edit_button:hover,
+.edit:hover {
+  border: 1.5px solid #102b2c;
+  background: #00c2cb;
 }/*# sourceMappingURL=style.css.map */

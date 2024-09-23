@@ -154,6 +154,12 @@
               width: 22px;
               height: 22px;
 
+              transition: all 0.3s ease-in-out;
+              &:hover {
+                border: 1.5px solid #b12025;
+                background-color: #fff;
+              }
+
               @media screen and (max-width: 768px) {
                 top: 22px;
                 right: 20px;

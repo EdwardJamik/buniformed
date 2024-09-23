@@ -476,6 +476,11 @@
               width: 48px;
               height: 40px;
               border-radius: 10px;
+              transition: all 0.3s ease-in-out;
+              &:hover {
+                border: 1.5px solid #102b2c;
+                background-color: #00c2cb;
+              }
               @media screen and (max-width: 1180px) {
                 width: 35px;
                 height: 30px;
@@ -491,6 +496,12 @@
               width: 48px;
               height: 40px;
               border-radius: 10px;
+
+              transition: all 0.3s ease-in-out;
+              &:hover {
+                border: 1.5px solid #b12025;
+                background-color: #fff;
+              }
               @media screen and (max-width: 1180px) {
                 width: 35px;
                 height: 30px;

@@ -165,4 +165,9 @@
   background-position: center;
   margin: 0 auto;
   display: block;
+  transition: all 0.3s ease-in-out;
+}
+.apporoval_info .container .list li .triggers .edit_order:hover {
+  border: 1.5px solid #102b2c;
+  background-color: #00c2cb;
 }/*# sourceMappingURL=style.css.map */

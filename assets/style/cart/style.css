@@ -161,6 +161,11 @@
   background-position: center;
   width: 22px;
   height: 22px;
+  transition: all 0.3s ease-in-out;
+}
+.cart_content .container .left_side > ul > li > .price .remove_button:hover, .cart_content .container .left_side > ul > li > .total .remove_button:hover {
+  border: 1.5px solid #b12025;
+  background-color: #fff;
 }
 @media screen and (max-width: 768px) {
   .cart_content .container .left_side > ul > li > .price .remove_button, .cart_content .container .left_side > ul > li > .total .remove_button {

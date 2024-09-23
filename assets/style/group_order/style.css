@@ -835,6 +835,11 @@
   width: 48px;
   height: 40px;
   border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+.orders .container .content .order_list > li .triggers .edit_button:hover {
+  border: 1.5px solid #102b2c;
+  background-color: #00c2cb;
 }
 @media screen and (max-width: 1440px) {
   .orders .container .content .order_list > li .triggers .edit_button {
@@ -851,6 +856,11 @@
   width: 48px;
   height: 40px;
   border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+.orders .container .content .order_list > li .triggers .remove_button:hover {
+  border: 1.5px solid #b12025;
+  background-color: #fff;
 }
 @media screen and (max-width: 1440px) {
   .orders .container .content .order_list > li .triggers .remove_button {
