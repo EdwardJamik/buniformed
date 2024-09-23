@@ -147,25 +147,31 @@
   margin-left: 16px;
 }
 
-.store_filter {
+.filter_section .store_filter {
   margin-top: 100px;
 }
-.store_filter .container {
+.filter_section .store_filter .container {
   max-width: 1140px;
   width: 100%;
 }
-.store_filter .container .wrapper {
+.filter_section .store_filter .container .wrapper {
   display: none;
 }
-.store_filter .container .content {
+.filter_section .store_filter .container .content {
   display: flex;
   justify-content: space-between;
 }
-.store_filter .container .content .left_side {
+.filter_section .store_filter .container .content .left_side {
   display: flex;
   gap: 14px;
 }
-.store_filter .container .content .left_side .filter > span {
+.filter_section .store_filter .container .content .left_side .filter {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 36px;
+}
+.filter_section .store_filter .container .content .left_side .filter > span {
   font-family: Roboto Flex;
   font-size: 16px;
   font-weight: 400;
@@ -179,11 +185,13 @@
   border-radius: 10px;
   background-position: 84%;
   cursor: pointer;
+  transition: background 0.3s ease-in-out;
 }
-.store_filter .container .content .left_side .filter > span:hover {
+.filter_section .store_filter .container .content .left_side .filter > span:hover {
   background-color: rgba(0, 194, 203, 0.2);
 }
-.store_filter .container .content .left_side .filter > ul {
+.filter_section .store_filter .container .content .left_side .filter > ul {
+  position: absolute;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
@@ -193,14 +201,16 @@
   background: #fff;
   box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.1019607843);
   border-radius: 10px;
-  display: none;
+  top: 36px;
+  z-index: 99;
+  transition: max-height 0.5s ease-out;
 }
-.store_filter .container .content .left_side .filter > ul li {
+.filter_section .store_filter .container .content .left_side .filter > ul li {
   display: flex;
   align-items: center;
   margin-bottom: 8px;
 }
-.store_filter .container .content .left_side .filter > ul li label {
+.filter_section .store_filter .container .content .left_side .filter > ul li label {
   font-size: 14px;
   font-weight: 400;
   line-height: 19.6px;
@@ -209,11 +219,14 @@
   text-transform: uppercase;
   margin-left: 10px;
 }
-.store_filter .container .content .right_side {
+.filter_section .store_filter .container .content .left_side .filter:hover ul {
+  display: grid;
+}
+.filter_section .store_filter .container .content .right_side {
   display: flex;
   align-items: center;
 }
-.store_filter .container .content .right_side > select {
+.filter_section .store_filter .container .content .right_side > select {
   font-size: 16px;
   font-weight: 400;
   line-height: 22.4px;
@@ -226,7 +239,7 @@
   text-align: center;
   padding-right: 24px;
 }
-.store_filter .container .content .right_side .total {
+.filter_section .store_filter .container .content .right_side .total {
   font-size: 16px;
   font-weight: 500;
   line-height: 22.4px;
@@ -277,6 +290,13 @@
   box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.1019607843);
   background: #fff;
   padding: 24px 24px 18px;
+  transition: border-color 0.3s ease-in-out;
+}
+.products .container .products_list > li:hover {
+  border-color: #b12025;
+}
+.products .container .products_list > li:hover .product_image {
+  top: -6px;
 }
 @media screen and (max-width: 768px) {
   .products .container .products_list > li {
@@ -329,6 +349,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.3s ease-in-out;
+  top: 0;
 }
 @media screen and (max-width: 768px) {
   .products .container .products_list > li .product_image {
@@ -417,6 +439,9 @@
   border-radius: 100%;
   width: 14px;
   height: 14px;
+}
+.products .container .products_list > li:hover .title {
+  color: #b12025;
 }
 .products .container .products_list > li .new {
   position: absolute;

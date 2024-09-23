@@ -151,98 +151,115 @@
   }
 }
 
-.store_filter {
-  margin-top: 100px;
-  & .container {
-    max-width: 1140px;
-    width: 100%;
+.filter_section {
+  & .store_filter {
+    margin-top: 100px;
+    & .container {
+      max-width: 1140px;
+      width: 100%;
 
-    & .wrapper {
-      display: none;
-    }
+      & .wrapper {
+        display: none;
+      }
 
-    & .content {
-      display: flex;
-      justify-content: space-between;
-      & .left_side {
+      & .content {
         display: flex;
-        gap: 14px;
-        & .filter {
-          & > span {
-            font-family: Roboto Flex;
+        justify-content: space-between;
+        & .left_side {
+          display: flex;
+          gap: 14px;
+          & .filter {
+            position: relative;
+            display: flex;
+            align-items: center;
+            min-height: 36px;
+
+            & > span {
+              font-family: Roboto Flex;
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 22.4px;
+              text-align: left;
+              color: #000;
+              text-transform: uppercase;
+              padding: 6px 32px 6px 14px;
+              background-image: url("/assets/images/arrow_bottom_filter.svg");
+              background-repeat: no-repeat;
+              border-radius: 10px;
+              background-position: 84%;
+              cursor: pointer;
+              transition: background 0.3s ease-in-out;
+
+              &:hover {
+                background-color: rgba(0, 194, 203, 0.2);
+              }
+            }
+
+            & > ul {
+              position: absolute;
+              display: grid;
+              grid-template-columns: repeat(2, 1fr);
+              grid-template-rows: 1fr;
+              grid-column-gap: 48px;
+              grid-row-gap: 0px;
+              padding: 24px;
+              background: #fff;
+              box-shadow: 0px 4px 50px 0px #0000001a;
+              border-radius: 10px;
+              top: 36px;
+              z-index: 99;
+              // display: none;
+              // max-height: 0;
+              transition: max-height 0.5s ease-out;
+
+              & li {
+                display: flex;
+                align-items: center;
+                margin-bottom: 8px;
+                & label {
+                  font-size: 14px;
+                  font-weight: 400;
+                  line-height: 19.6px;
+                  text-align: left;
+                  color: #000;
+                  text-transform: uppercase;
+                  margin-left: 10px;
+                }
+              }
+            }
+
+            &:hover ul {
+              display: grid;
+            }
+          }
+        }
+
+        & .right_side {
+          display: flex;
+          align-items: center;
+          & > select {
             font-size: 16px;
             font-weight: 400;
             line-height: 22.4px;
-            text-align: left;
+            text-align: right;
             color: #000;
             text-transform: uppercase;
-            padding: 6px 32px 6px 14px;
-            background-image: url("/assets/images/arrow_bottom_filter.svg");
-            background-repeat: no-repeat;
-            border-radius: 10px;
-            background-position: 84%;
-            cursor: pointer;
 
-            &:hover {
-              background-color: rgba(0, 194, 203, 0.2);
-            }
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 22.4px;
+            text-align: center;
+            padding-right: 24px;
           }
 
-          & > ul {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: 1fr;
-            grid-column-gap: 48px;
-            grid-row-gap: 0px;
-            padding: 24px;
-            background: #fff;
-            box-shadow: 0px 4px 50px 0px #0000001a;
-            border-radius: 10px;
-
-            display: none;
-            & li {
-              display: flex;
-              align-items: center;
-              margin-bottom: 8px;
-              & label {
-                font-size: 14px;
-                font-weight: 400;
-                line-height: 19.6px;
-                text-align: left;
-                color: #000;
-                text-transform: uppercase;
-                margin-left: 10px;
-              }
-            }
+          & .total {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 22.4px;
+            text-align: right;
+            color: #000;
+            margin-left: 36px;
           }
-        }
-      }
-
-      & .right_side {
-        display: flex;
-        align-items: center;
-        & > select {
-          font-size: 16px;
-          font-weight: 400;
-          line-height: 22.4px;
-          text-align: right;
-          color: #000;
-          text-transform: uppercase;
-
-          font-size: 16px;
-          font-weight: 400;
-          line-height: 22.4px;
-          text-align: center;
-          padding-right: 24px;
-        }
-
-        & .total {
-          font-size: 16px;
-          font-weight: 500;
-          line-height: 22.4px;
-          text-align: right;
-          color: #000;
-          margin-left: 36px;
         }
       }
     }
@@ -287,6 +304,14 @@
         box-shadow: 0px 4px 50px 0px #0000001a;
         background: #fff;
         padding: 24px 24px 18px;
+        transition: border-color 0.3s ease-in-out;
+
+        &:hover {
+          border-color: #b12025;
+          & .product_image {
+            top: -6px;
+          }
+        }
 
         @media screen and (max-width: 768px) {
           padding: 20px 20px;
@@ -338,7 +363,8 @@
           display: flex;
           justify-content: center;
           align-items: center;
-
+          transition: all 0.3s ease-in-out;
+          top: 0;
           @media screen and (max-width: 768px) {
             height: 172px;
           }
@@ -426,6 +452,12 @@
                 height: 14px;
               }
             }
+          }
+        }
+
+        &:hover {
+          & .title {
+            color: #b12025;
           }
         }
 
