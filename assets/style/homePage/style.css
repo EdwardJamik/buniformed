@@ -717,6 +717,9 @@
     margin: 24px auto 0;
   }
 }
+.trending_products a.red_button:hover {
+  color: #b12025;
+}
 
 .programs {
   position: relative;

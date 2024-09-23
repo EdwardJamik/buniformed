@@ -256,6 +256,7 @@ h4 {
   text-transform: uppercase;
   min-width: 120px;
   text-align: center;
+  transition: color 0.3s ease-in-out;
 }
 @media screen and (max-width: 768px) {
   .up_section .container a {
@@ -267,6 +268,9 @@ h4 {
     font-weight: 400;
     line-height: 17.38px;
   }
+}
+.up_section .container a:hover {
+  color: #b12025;
 }
 
 header .navigation {
@@ -299,6 +303,7 @@ header .navigation .shop_button {
   border: 2px solid #102b2c;
   border-radius: 10px;
   cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
 }
 @media screen and (max-width: 1024px) {
   header .navigation .shop_button {
@@ -317,6 +322,9 @@ header .navigation .shop_button.open {
 }
 header .navigation .shop_button.open #menu span {
   background: #fff;
+}
+header .navigation .shop_button:hover {
+  background: #00c2cb;
 }
 header .navigation .shop_button #menu {
   width: 28px;
@@ -401,8 +409,23 @@ header .navigation .logo.hidden {
 header .navigation .search_button {
   transition: width 0.3s ease-in-out;
 }
+header .navigation .search_button::before {
+  transition: background-color 0.3s ease-in-out;
+  border-radius: 10px;
+}
+header .navigation .search_button:hover:before {
+  background-color: #00c2cb;
+}
 header .navigation .search_button.open {
   width: 100%;
+}
+header .navigation .search_button.open::before {
+  border-radius: 0;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+header .navigation .search_button.open:hover:before {
+  background-color: transparent;
 }
 @media screen and (max-width: 1024px) {
   header .navigation .search_button {
@@ -695,6 +718,10 @@ span.themysion {
   height: 58px;
   border-radius: 10px;
   color: #102b2c;
+  transition: background-color 0.3s ease-in-out;
+}
+.cart_button:hover {
+  background-color: #00c2cb;
 }
 @media screen and (max-width: 1024px) {
   .cart_button {
@@ -716,6 +743,10 @@ span.themysion {
   height: 58px;
   border-radius: 10px;
   color: #102b2c;
+  transition: background-color 0.3s ease-in-out;
+}
+.user_button:hover {
+  background-color: #00c2cb;
 }
 @media screen and (max-width: 1024px) {
   .user_button {
