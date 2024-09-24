@@ -801,6 +801,13 @@
           display: none !important;
         }
 
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+          background-color: #b12025;
+          border: 1px solid #102b2c;
+        }
+
         &.slick-disabled {
           background: #ffffff;
           width: 50px;
@@ -818,6 +825,16 @@
             width: 40px;
             height: 40px;
             // left: 10px;
+          }
+
+          transition: all 0.3s ease-in-out;
+
+          &:hover {
+            background-image: url("/assets/images/prev_slide_white_icon.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: #b12025;
+            border: 1px solid #102b2c;
           }
         }
       }
@@ -841,6 +858,13 @@
         // @media screen and (max-width: 1280px) {
         //   right: 20px;
         // }
+
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+          background-color: #b12025;
+          border: 1px solid #102b2c;
+        }
 
         @media screen and (max-width: 1280px) {
           width: 40px;
