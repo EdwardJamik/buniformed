@@ -1745,3 +1745,36 @@ select {
     background: #00c2cb;
   }
 }
+
+input[type="checkbox"] {
+  margin-top: 4px;
+  margin-right: 20px;
+
+  appearance: none;
+  -webkit-appearance: none;
+  max-width: 24px;
+  width: 100%;
+  height: 24px;
+  border: 2px solid #000;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+
+  &:checked::before {
+    content: "✓";
+    color: #fff;
+    text-align: center;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  &:checked {
+    background-color: #000;
+    border-color: #000;
+  }
+}
