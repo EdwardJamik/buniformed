@@ -95,10 +95,12 @@
           display: flex;
           align-items: center;
           gap: 22px;
+          cursor: pointer;
 
           & li {
             display: flex;
             flex-direction: column;
+            max-width: 200px;
             width: 158px;
             height: 108px;
             border-radius: 10px;
@@ -107,6 +109,17 @@
             box-shadow: 0px 4px 50px 0px #0000001a;
             padding: 14px 20px 24px;
             margin-top: 30px;
+            transition: width 0.3s ease-in-out;
+            &:hover {
+              max-width: 200px;
+              padding: 14px 22px 24px;
+              width: 100%;
+              background: none;
+              & .step,
+              & .action {
+                color: #102b2c;
+              }
+            }
 
             @media screen and (max-width: 480px) {
               width: 98px;

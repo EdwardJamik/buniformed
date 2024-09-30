@@ -825,10 +825,12 @@
   display: flex;
   align-items: center;
   gap: 22px;
+  cursor: pointer;
 }
 .programs .container .content .left_side .list_step li {
   display: flex;
   flex-direction: column;
+  max-width: 200px;
   width: 158px;
   height: 108px;
   border-radius: 10px;
@@ -837,6 +839,16 @@
   box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.1019607843);
   padding: 14px 20px 24px;
   margin-top: 30px;
+  transition: width 0.3s ease-in-out;
+}
+.programs .container .content .left_side .list_step li:hover {
+  max-width: 200px;
+  padding: 14px 22px 24px;
+  width: 100%;
+  background: none;
+}
+.programs .container .content .left_side .list_step li:hover .step, .programs .container .content .left_side .list_step li:hover .action {
+  color: #102b2c;
 }
 @media screen and (max-width: 480px) {
   .programs .container .content .left_side .list_step li {
@@ -1171,8 +1183,8 @@
 }
 .newletter .container .content .left_side .newletter_input .newsletter_button {
   position: absolute;
-  top: -2px;
-  right: -6px;
+  top: -3px;
+  right: -3px;
   width: 160px;
   height: 70px;
   border: 2px solid #102b2c;
@@ -1185,6 +1197,11 @@
   font-weight: 400;
   line-height: 23.17px;
   text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+.newletter .container .content .left_side .newletter_input .newsletter_button:hover {
+  background: #102b2c;
+  color: #fff;
 }
 @media screen and (max-width: 768px) {
   .newletter .container .content .left_side .newletter_input .newsletter_button {

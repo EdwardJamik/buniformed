@@ -190,7 +190,7 @@
                   Personalize
                 </div>
 
-                <button><span>Add Embroidery</span><span class="price">From $5</span></button>
+                <button class="add_embroidery"><span>Add Embroidery</span><span class="price">From $5</span></button>
               </div>
 
               <div class="product_triggers">
@@ -225,7 +225,6 @@
       <div class="product_second_content">
         <div class="container">
 
-
           <div class="tabs">
             <button class="selected">Description</button>
             <button>Additional INformation</button>
@@ -237,6 +236,52 @@
               <div class="left_side">
                 <div class="text_content">
                   <h5>Ordering uniforms and medical apparel for groups has never been so simple! </h5>
+                  <p>A non quis adipiscing mi. Gravida a imperdiet euismod in risus neque tempus et proin. Libero tortor
+                    est ultrices in. Laoreet ac eu et odio. Aliquet enim praesent ipsum aliquam leo diam aliquam magna
+                    dolor. Euismod nec purus phasellus at dictum. Velit quisque donec ac mauris turpis at.</p>
+                  <ul>
+                    <li>Quam sed porttitor sed cras id varius integer quam rhoncus.</li>
+                    <li>Quam ut maecenas pretium tincidunt porttitor.</li>
+                    <li>Ullamcorper ultricies duis egestas id bibendum pretium</li>
+                  </ul>
+                </div>
+
+              </div>
+              <div class="right_side">
+                <img src="/assets/images/product_second_img.png" alt="Product description image">
+              </div>
+            </div>
+
+          </div>
+
+          <div class="additional">
+            <div class="content">
+              <div class="left_side">
+                <div class="text_content">
+                  <h5>Additional Ordering uniforms and medical apparel for groups has never been so simple! </h5>
+                  <p>A non quis adipiscing mi. Gravida a imperdiet euismod in risus neque tempus et proin. Libero tortor
+                    est ultrices in. Laoreet ac eu et odio. Aliquet enim praesent ipsum aliquam leo diam aliquam magna
+                    dolor. Euismod nec purus phasellus at dictum. Velit quisque donec ac mauris turpis at.</p>
+                  <ul>
+                    <li>Quam sed porttitor sed cras id varius integer quam rhoncus.</li>
+                    <li>Quam ut maecenas pretium tincidunt porttitor.</li>
+                    <li>Ullamcorper ultricies duis egestas id bibendum pretium</li>
+                  </ul>
+                </div>
+
+              </div>
+              <div class="right_side">
+                <img src="/assets/images/product_second_img.png" alt="Product description image">
+              </div>
+            </div>
+
+          </div>
+
+          <div class="reviews">
+            <div class="content">
+              <div class="left_side">
+                <div class="text_content">
+                  <h5>Reviews Ordering uniforms and medical apparel for groups has never been so simple! </h5>
                   <p>A non quis adipiscing mi. Gravida a imperdiet euismod in risus neque tempus et proin. Libero tortor
                     est ultrices in. Laoreet ac eu et odio. Aliquet enim praesent ipsum aliquam leo diam aliquam magna
                     dolor. Euismod nec purus phasellus at dictum. Velit quisque donec ac mauris turpis at.</p>
@@ -403,21 +448,99 @@
     </div>
   </footer>
 
-  <div id="thankYouModal" class="modal checkout">
+  <div id="thankYouModal" class="modal embroidery">
     <div class="modal-content">
       <span class="close"></span>
-      <div class="left_side">
-        <img src="/assets/images/checkout_img.png" class="pc" alt="Checkout">
-        <img src="/assets/images/checkout_mobile_img.png" class="mobile" alt="Checkout">
-      </div>
-      <div class="right_side">
-        <h5>Thank you for your order!</h5>
-        <p>Your order # is 1452255</p>
-        <div class="comment">
-          <h5>We cant wait for you to look terrific!</h5>
-          <p>A separate email will be sent once tracking is available</p>
+      <h5>Add Embroidery</h5>
+
+      <div class="tabs">
+        <div class="triggers">
+          <button class="left_button">Left Side</button>
+          <button class="right_button">Right side</button>
         </div>
-        <a href="index.html" class="default_button continue_shopping">Continue shopping</a>
+      </div>
+
+      <div class="content">
+        <div class="left_side">
+          <div class="line">
+            <div class="title">
+              <p>Text line 1 - $5.00</p>
+              <span>0/22</span>
+            </div>
+            <input type="text">
+          </div>
+          <div class="line">
+            <div class="title">
+              <p>Text line 2 - $5.00</p>
+              <span>0/22</span>
+            </div>
+            <input type="text">
+          </div>
+          <div class="line">
+            <div class="title">
+              <p>Text line 3 - $5.00</p>
+              <span>0/22</span>
+            </div>
+            <input type="text">
+          </div>
+        </div>
+        <div class="right_side">
+          <div class="line">
+            <div class="title">
+              <p>Font</p>
+            </div>
+            <select name="" id="">
+              <option value="">Block</option>
+            </select>
+          </div>
+          <div class="line">
+            <div class="title">
+              <p>Thread Color*</p>
+            </div>
+            <select name="" id="">
+              <option value="">Select a Color</option>
+            </select>
+          </div>
+          <div class="link">
+            <a href="#">Need Help?</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="logo_content">
+        <div class="left_side">
+          <div class="line">
+            <div class="title">
+              <p>Custom Logo $9.00 (PNG, JPG)</p>
+            </div>
+            <input type="file" class="default_button">
+          </div>
+        </div>
+        <div class="right_side">
+          <div class="line">
+            <div class="title">
+              <p>Logo Position</p>
+            </div>
+            <ul class="position">
+              <li><label for="left"></label><input type="radio" name="position" id="left"></li>
+              <li><label for="center"></label><input type="radio" name="position" id="center"></li>
+              <li><label for="right"></label><input type="radio" name="position" id="right"></li>
+            </ul>
+          </div>
+        </div>
+      </div> -->
+
+      <div class="second_line">
+        <div class="title">
+          <p>Special Instructions</p>
+          <span>0/200</span>
+        </div>
+        <textarea name="" id=""></textarea>
+      </div>
+
+      <div class="button_list">
+        <button class="default_button close_embroidery">Cancel</button>
+        <button class="red_button close_embroidery">Next - Accept Terms</button>
       </div>
 
     </div>
@@ -426,6 +549,66 @@
   <script src="./assets/scripts/modal.js"></script>
   <script>
     $(document).ready(function () {
+
+      const $productImg = $('.product_img')
+      const $imgList = $productImg.find('.img_list')
+      const $mainImage = $productImg.find('.main_image img')
+      const $currentImg = $productImg.find('.current_img')
+      const $allImg = $productImg.find('.all_img')
+      const $backImg = $productImg.find('.back_img')
+      const $nextImg = $productImg.find('.next_img')
+      const $fullSizeImg = $productImg.find('.full_size_img')
+
+      let currentIndex = 0
+      const totalImages = $imgList.find('li').length
+
+      function updateCounter() {
+        $currentImg.text(currentIndex + 1)
+        $allImg.text(totalImages)
+      }
+
+      function updateMainImage() {
+        const $currentThumb = $imgList.find('li').eq(currentIndex)
+        $mainImage.attr('src', $currentThumb.find('img').attr('src'))
+        $imgList.find('li').removeClass('current')
+        $currentThumb.addClass('current')
+        updateCounter()
+      }
+
+      $backImg.click(function () {
+        currentIndex = (currentIndex - 1 + totalImages) % totalImages
+        updateMainImage()
+      })
+
+      $nextImg.click(function () {
+        currentIndex = (currentIndex + 1) % totalImages
+        updateMainImage()
+      })
+
+      $imgList.on('click', 'li', function () {
+        currentIndex = $(this).index()
+        updateMainImage()
+      })
+
+      function openFullscreen(element) {
+        if (element.requestFullscreen) {
+          element.requestFullscreen()
+        } else if (element.mozRequestFullScreen) {
+          element.mozRequestFullScreen()
+        } else if (element.webkitRequestFullscreen) {
+          element.webkitRequestFullscreen()
+        } else if (element.msRequestFullscreen) {
+          element.msRequestFullscreen()
+        }
+      }
+
+      $fullSizeImg.click(function () {
+        openFullscreen($mainImage[0])
+      })
+
+      updateCounter()
+
+
       $('.color_list input[type="radio"]').change(function () {
         $('.item_color').removeClass('selected')
         if ($(this).is(':checked')) {
@@ -449,65 +632,72 @@
           $(this).closest('li').find('.item_size').addClass('selected')
         }
       })
+
+      $('.description, .additional, .reviews').not(':first').hide()
+
+      $('.tabs button').click(function () {
+        $('.tabs button').removeClass('selected')
+        $(this).addClass('selected')
+
+        var index = $(this).index()
+        var $currentContent = $('.description, .additional, .reviews').filter(':visible')
+        var $newContent
+
+        switch (index) {
+          case 0:
+            $newContent = $('.description')
+            break
+          case 1:
+            $newContent = $('.additional')
+            break
+          case 2:
+            $newContent = $('.reviews')
+            break
+        }
+
+        $currentContent.fadeOut(300, function () {
+          $newContent.fadeIn(300)
+        })
+      })
     })
 
-    const $productImg = $('.product_img')
-    const $imgList = $productImg.find('.img_list')
-    const $mainImage = $productImg.find('.main_image img')
-    const $currentImg = $productImg.find('.current_img')
-    const $allImg = $productImg.find('.all_img')
-    const $backImg = $productImg.find('.back_img')
-    const $nextImg = $productImg.find('.next_img')
-    const $fullSizeImg = $productImg.find('.full_size_img')
-
-    let currentIndex = 0
-    const totalImages = $imgList.find('li').length
-
-    function updateCounter() {
-      $currentImg.text(currentIndex + 1)
-      $allImg.text(totalImages)
-    }
-
-    function updateMainImage() {
-      const $currentThumb = $imgList.find('li').eq(currentIndex)
-      $mainImage.attr('src', $currentThumb.find('img').attr('src'))
-      $imgList.find('li').removeClass('current')
-      $currentThumb.addClass('current')
-      updateCounter()
-    }
-
-    $backImg.click(function () {
-      currentIndex = (currentIndex - 1 + totalImages) % totalImages
-      updateMainImage()
-    })
-
-    $nextImg.click(function () {
-      currentIndex = (currentIndex + 1) % totalImages
-      updateMainImage()
-    })
-
-    $imgList.on('click', 'li', function () {
-      currentIndex = $(this).index()
-      updateMainImage()
-    })
-
-    function openFullscreen(element) {
-      if (element.requestFullscreen) {
-        element.requestFullscreen()
-      } else if (element.mozRequestFullScreen) {
-        element.mozRequestFullScreen()
-      } else if (element.webkitRequestFullscreen) {
-        element.webkitRequestFullscreen()
-      } else if (element.msRequestFullscreen) {
-        element.msRequestFullscreen()
+    $(document).ready(function () {
+      function lockScroll() {
+        $('html, body').css({
+          overflow: 'hidden',
+          height: '100%',
+        })
       }
-    }
 
-    $fullSizeImg.click(function () {
-      openFullscreen($mainImage[0])
-    })
+      function unlockScroll() {
+        $('html, body').css({
+          overflow: '',
+          height: '',
+        })
+      }
 
-    updateCounter();
+      function showPopUp() {
+        $('#thankYouModal').fadeIn(300)
+        lockScroll()
+      }
+
+      $('.close_embroidery').click(function () {
+        $('#thankYouModal').fadeOut(300)
+        unlockScroll()
+      })
+
+      $('.add_embroidery').click(function () {
+        showPopUp()
+      })
+
+      $(window).click(function (event) {
+        if (event.target == document.getElementById('thankYouModal')) {
+          $('#thankYouModal').fadeOut(300)
+          unlockScroll()
+        }
+      })
+    });
+
   </script>
 </body>
 

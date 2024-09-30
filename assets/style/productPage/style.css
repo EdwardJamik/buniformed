@@ -784,16 +784,16 @@
   bottom: -8px;
   left: -10%;
 }
-.product_second_content .container .description {
+.product_second_content .container .description, .product_second_content .container .additional, .product_second_content .container .reviews {
   margin-top: 90px;
   padding-bottom: 80px;
 }
 @media screen and (max-width: 768px) {
-  .product_second_content .container .description {
+  .product_second_content .container .description, .product_second_content .container .additional, .product_second_content .container .reviews {
     margin-top: 24px;
   }
 }
-.product_second_content .container .description .content {
+.product_second_content .container .description .content, .product_second_content .container .additional .content, .product_second_content .container .reviews .content {
   display: grid;
   grid-template-columns: minmax(346px, 536px) minmax(280px, 380px);
   grid-template-rows: 1fr;
@@ -804,18 +804,18 @@
   justify-content: space-between;
 }
 @media screen and (max-width: 1180px) {
-  .product_second_content .container .description .content {
+  .product_second_content .container .description .content, .product_second_content .container .additional .content, .product_second_content .container .reviews .content {
     padding: 0 20px;
   }
 }
 @media screen and (max-width: 768px) {
-  .product_second_content .container .description .content {
+  .product_second_content .container .description .content, .product_second_content .container .additional .content, .product_second_content .container .reviews .content {
     display: flex;
     flex-direction: column;
     padding: 0;
   }
 }
-.product_second_content .container .description .content .left_side .text_content h5 {
+.product_second_content .container .description .content .left_side .text_content h5, .product_second_content .container .additional .content .left_side .text_content h5, .product_second_content .container .reviews .content .left_side .text_content h5 {
   font-family: Dela Gothic One;
   font-size: 32px;
   font-weight: 400;
@@ -824,13 +824,13 @@
   margin-bottom: 22px;
 }
 @media screen and (max-width: 768px) {
-  .product_second_content .container .description .content .left_side .text_content h5 {
+  .product_second_content .container .description .content .left_side .text_content h5, .product_second_content .container .additional .content .left_side .text_content h5, .product_second_content .container .reviews .content .left_side .text_content h5 {
     font-size: 20px;
     line-height: 28px;
     margin-bottom: 14px;
   }
 }
-.product_second_content .container .description .content .left_side .text_content p {
+.product_second_content .container .description .content .left_side .text_content p, .product_second_content .container .additional .content .left_side .text_content p, .product_second_content .container .reviews .content .left_side .text_content p {
   font-size: 18px;
   font-weight: 400;
   line-height: 25.2px;
@@ -838,16 +838,16 @@
   margin-bottom: 24px;
 }
 @media screen and (max-width: 768px) {
-  .product_second_content .container .description .content .left_side .text_content p {
+  .product_second_content .container .description .content .left_side .text_content p, .product_second_content .container .additional .content .left_side .text_content p, .product_second_content .container .reviews .content .left_side .text_content p {
     font-size: 16px;
     line-height: 22.4px;
     margin-bottom: 14px;
   }
 }
-.product_second_content .container .description .content .left_side .text_content ul {
+.product_second_content .container .description .content .left_side .text_content ul, .product_second_content .container .additional .content .left_side .text_content ul, .product_second_content .container .reviews .content .left_side .text_content ul {
   padding-left: 20px;
 }
-.product_second_content .container .description .content .left_side .text_content ul li {
+.product_second_content .container .description .content .left_side .text_content ul li, .product_second_content .container .additional .content .left_side .text_content ul li, .product_second_content .container .reviews .content .left_side .text_content ul li {
   list-style: disc;
   font-size: 18px;
   font-weight: 400;
@@ -855,23 +855,26 @@
   text-align: left;
 }
 @media screen and (max-width: 768px) {
-  .product_second_content .container .description .content .left_side .text_content ul li {
+  .product_second_content .container .description .content .left_side .text_content ul li, .product_second_content .container .additional .content .left_side .text_content ul li, .product_second_content .container .reviews .content .left_side .text_content ul li {
     font-size: 16px;
     line-height: 22.4px;
   }
 }
-.product_second_content .container .description .content .left_side .text_content ul li:not(:last-child) {
+.product_second_content .container .description .content .left_side .text_content ul li:not(:last-child), .product_second_content .container .additional .content .left_side .text_content ul li:not(:last-child), .product_second_content .container .reviews .content .left_side .text_content ul li:not(:last-child) {
   margin-bottom: 14px;
 }
 @media screen and (max-width: 768px) {
-  .product_second_content .container .description .content .left_side .text_content ul li:not(:last-child) {
+  .product_second_content .container .description .content .left_side .text_content ul li:not(:last-child), .product_second_content .container .additional .content .left_side .text_content ul li:not(:last-child), .product_second_content .container .reviews .content .left_side .text_content ul li:not(:last-child) {
     margin-bottom: 8px;
   }
 }
 @media screen and (max-width: 768px) {
-  .product_second_content .container .description .content .right_side img {
+  .product_second_content .container .description .content .right_side img, .product_second_content .container .additional .content .right_side img, .product_second_content .container .reviews .content .right_side img {
     margin: 10px auto 0;
   }
+}
+.product_second_content .container .reviews, .product_second_content .container .additional {
+  display: none;
 }
 
 .other_product_list {
@@ -1177,5 +1180,293 @@
   .product_advantages .container .advantage_list li > span {
     font-size: 12px;
     line-height: 16.8px;
+  }
+}
+
+.modal.embroidery .modal-content {
+  padding: 40px 54px;
+  max-width: 668px;
+  width: 100%;
+  border-radius: 10px;
+  margin: 1% auto;
+}
+@media screen and (max-width: 768px) {
+  .modal.embroidery .modal-content {
+    padding: 30px 20px;
+    overflow-y: auto;
+    height: 100%;
+  }
+}
+.modal.embroidery .modal-content h5 {
+  font-family: Dela Gothic One;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 30.8px;
+  text-align: center;
+  color: #102b2c;
+  text-transform: uppercase;
+  border-bottom: 1px solid #dcdcdc;
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+}
+@media screen and (max-width: 768px) {
+  .modal.embroidery .modal-content h5 {
+    padding-bottom: 12px;
+    margin-bottom: 14px;
+  }
+}
+.modal.embroidery .modal-content .tabs {
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+  height: 150px;
+  background-color: #2b272b;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.modal.embroidery .modal-content .tabs .triggers {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.modal.embroidery .modal-content .tabs .triggers button {
+  width: 100%;
+  height: 40px;
+  transition: background 0.3s ease-in-out;
+}
+.modal.embroidery .modal-content .tabs .triggers button:first-child {
+  background: #00c2cb;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 19.6px;
+  text-align: center;
+  text-transform: uppercase;
+  border-bottom-left-radius: 8px;
+}
+@media screen and (max-width: 768px) {
+  .modal.embroidery .modal-content .tabs .triggers button:first-child {
+    font-size: 12px;
+    line-height: 16.8px;
+  }
+}
+.modal.embroidery .modal-content .tabs .triggers button:last-child {
+  background: #000000;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 19.6px;
+  text-align: center;
+  text-transform: uppercase;
+  border-bottom-right-radius: 8px;
+}
+@media screen and (max-width: 768px) {
+  .modal.embroidery .modal-content .tabs .triggers button:last-child {
+    font-size: 12px;
+    line-height: 16.8px;
+  }
+}
+.modal.embroidery .modal-content .tabs .triggers button:hover {
+  background: #b12025;
+}
+.modal.embroidery .modal-content > .content {
+  width: 100%;
+  display: flex;
+  gap: 14px;
+}
+@media screen and (max-width: 768px) {
+  .modal.embroidery .modal-content > .content {
+    display: block;
+  }
+}
+.modal.embroidery .modal-content > .content .line > .title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+.modal.embroidery .modal-content > .content .line > .title > p {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: left;
+  color: #102b2c;
+}
+@media screen and (max-width: 768px) {
+  .modal.embroidery .modal-content > .content .line > .title > p {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+.modal.embroidery .modal-content > .content .line > .title > span {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: right;
+  color: #797979;
+}
+@media screen and (max-width: 768px) {
+  .modal.embroidery .modal-content > .content .line > .title > span {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+.modal.embroidery .modal-content > .content .line input {
+  border: 2px solid #102b2c;
+  box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.1019607843);
+  border-radius: 10px;
+  height: 60px;
+  width: 100%;
+  color: #102b2c;
+  padding: 18px 24px;
+}
+.modal.embroidery .modal-content > .content .line select {
+  border: 2px solid #102b2c;
+  box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.1019607843);
+  border-radius: 10px;
+  height: 60px;
+  width: 100%;
+  color: #102b2c;
+  padding: 18px 24px;
+}
+@media screen and (max-width: 768px) {
+  .modal.embroidery .modal-content > .content .line select {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+.modal.embroidery .modal-content > .content .left_side {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .modal.embroidery .modal-content > .content .left_side {
+    gap: 12px;
+  }
+}
+.modal.embroidery .modal-content > .content .left_side > .line {
+  max-width: 364px;
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .modal.embroidery .modal-content > .content .left_side > .line {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+.modal.embroidery .modal-content > .content .right_side {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  max-width: 180px;
+}
+@media screen and (max-width: 768px) {
+  .modal.embroidery .modal-content > .content .right_side {
+    margin-top: 14px;
+    max-width: 100%;
+  }
+}
+.modal.embroidery .modal-content > .content .right_side > .line {
+  max-width: 180px;
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .modal.embroidery .modal-content > .content .right_side > .line {
+    max-width: 100%;
+  }
+}
+.modal.embroidery .modal-content > .content .right_side > .line > .title {
+  justify-content: flex-end;
+}
+@media screen and (max-width: 768px) {
+  .modal.embroidery .modal-content > .content .right_side > .line > .title {
+    justify-content: flex-start;
+  }
+}
+.modal.embroidery .modal-content > .content .right_side .link {
+  text-align: left;
+  margin-top: 50px;
+}
+@media screen and (max-width: 768px) {
+  .modal.embroidery .modal-content > .content .right_side .link {
+    margin: 0 auto;
+  }
+}
+.modal.embroidery .modal-content > .content .right_side .link a {
+  font-family: Roboto Flex;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: left;
+  color: #102b2c;
+  text-decoration: underline;
+}
+.modal.embroidery .modal-content .second_line {
+  margin-bottom: 20px;
+}
+.modal.embroidery .modal-content .second_line > .title {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+  margin-bottom: 4px;
+}
+.modal.embroidery .modal-content .second_line > .title > p {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: left;
+  color: #102b2c;
+}
+@media screen and (max-width: 768px) {
+  .modal.embroidery .modal-content .second_line > .title > p {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+.modal.embroidery .modal-content .second_line > .title > span {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: right;
+  color: #797979;
+}
+@media screen and (max-width: 768px) {
+  .modal.embroidery .modal-content .second_line > .title > span {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+.modal.embroidery .modal-content .second_line textarea {
+  border: 2px solid #102b2c;
+  width: 100%;
+  border-radius: 10px;
+  height: 100px;
+  color: #102b2c;
+  padding: 16px;
+  resize: none;
+}
+.modal.embroidery .modal-content .button_list {
+  display: flex;
+  justify-content: space-between;
+  gap: 34px;
+}
+@media screen and (max-width: 768px) {
+  .modal.embroidery .modal-content .button_list {
+    flex-direction: column;
+    gap: 14px;
+  }
+}
+.modal.embroidery .modal-content .button_list button {
+  width: 100%;
+}
+.modal.embroidery .modal-content .button_list button:first-child {
+  max-width: 190px;
+}
+@media screen and (max-width: 768px) {
+  .modal.embroidery .modal-content .button_list button:first-child {
+    max-width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -488,7 +488,7 @@
             <div class="skip">...</div>
             <a href="#">6</a>
             <a href="#">7</a>
-            <a class="next" href="#"></a>
+            <a class="next_button" href="#"></a>
           </div>
         </div>
       </div>
@@ -570,7 +570,13 @@
           el.classList.add('aos-animate')
         }
       })
-    });
+    })
+
+    $(document).ready(function () {
+      $('.wrapper').click(function () {
+        $('.store_filter').toggleClass('open')
+      })
+    })
   </script>
 </body>
 
